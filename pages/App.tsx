@@ -3,19 +3,13 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Header from './components/Header'
-import App from './App'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function App() {
   return (
     <>
-    <Header/>
-    <main>
-      <App/>
-    </main>
-
-    {/* <Footer/> */}
+    <h1 className='text-blue-600 text-3xl'>Test </h1>
     
     </>
   )
