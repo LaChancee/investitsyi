@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int    @id @default(autoincrement()) @unique
+  name  String @db.VarChar(50)
+  first_name String @db.VarChar(50)
+  pseudo_name String @db.VarChar(50)
+  profile_picture String
+  email String @db.VarChar(100)
+  address String
+  zipcode String
+  town String
+  subtype String // subscription type
+  usertype String // user type (Professional or not )
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @db.Timestamp(6)
+  posts Post[]
+  Profile Profile?
+
+}
+
+model Profile {
+  id     Int     @id @default(autoincrement())
+  bio    String?
+  userId Int     @unique
+  User   User    @relation(fields: [userId], references: [id])
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  category String
+  title     String
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @db.Timestamp(6)
+  content   String?
+  published Boolean @default(true)
+  authorId  Int
+  author    User    @relation(fields: [authorId], references: [id])
+}
+model Product {
+  id Int @id @default(autoincrement())
+  name String @db.VarChar(255)
+  single_Product SingleProduct[]
+  Article Articles[]
+
+}
+
+model SingleProduct {
+  id Int @id @default(autoincrement())
+  name String
+  productId Int
+  category Product @relation(fields: [productId], references: [id])
+}
+
+model Articles {
+  id Int @id @default(autoincrement())
+  title String
+  subTitle String
+  productId Int
+  Product Product @relation(fields: [productId], references: [id])
+}
+

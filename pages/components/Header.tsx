@@ -16,7 +16,7 @@ export default function Header() {
           className="hbr peer"
           hidden
           aria-hidden="true"
-        />
+        />  {/* shadow ici*/}
         <nav className="fixed z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar shadow-md shadow-gray-600/5 peer-checked:navbar-active md:relative md:bg-transparent dark:shadow-none">
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0">
@@ -54,7 +54,7 @@ export default function Header() {
                     <li>
                       <a
                         href="#"
-                        className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                        className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Home</span>
                       </a>
@@ -62,7 +62,7 @@ export default function Header() {
                     <li>
                       <a
                         href="#"
-                        className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                        className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Portfolio</span>
                       </a>
@@ -70,7 +70,7 @@ export default function Header() {
                     <li>
                       <a
                         href="#"
-                        className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                        className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Services</span>
                       </a>
@@ -83,7 +83,7 @@ export default function Header() {
                     href="#"
                     className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                   >
-                    <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
+                    <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
                       Sign Up
                     </span>
                   </a>
@@ -91,7 +91,7 @@ export default function Header() {
                     href="#"
                     className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                   >
-                    <span className="relative text-sm font-semibold text-white dark:text-gray-900">
+                    <span className="relative text-sm font-semibold px-3 rounded-full py-2 bg-blue-700 hover:bg-blue-800 text-white dark:text-gray-900">
                       Login
                     </span>
                   </a>
