@@ -14,13 +14,13 @@ model User {
   id    Int    @id @default(autoincrement()) @unique
   name  String @db.VarChar(50)
   first_name String @db.VarChar(50)
-  pseudo_name String @db.VarChar(50)
-  profile_picture String
+  pseudo_name String @db.VarChar(50) @unique
+  profile_picture String?
   email String @db.VarChar(100)
   address String
   zipcode String
   town String
-  subtype String // subscription type
+  subtype Boolean // subscription type
   usertype String // user type (Professional or not )
   createdAt DateTime @default(now()) @db.Timestamp(6)
   updatedAt DateTime @default(now()) @db.Timestamp(6)
