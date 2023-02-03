@@ -17,6 +17,7 @@ model User {
   pseudo_name String @db.VarChar(50) @unique
   profile_picture String?
   email String @db.VarChar(100)
+  password String
   address String
   zipcode String
   town String

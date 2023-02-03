@@ -8,6 +8,7 @@ async function main() {
     first_name: faker.name.firstName(),
     pseudo_name: faker.random.word(),
     profile_picture: faker.internet.avatar(),
+    password: "Mdp1234",
     email: faker.internet.email(),
     address: faker.address.streetAddress(),
     zipcode: faker.address.zipCode(),
