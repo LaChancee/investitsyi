@@ -1,7 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +20,7 @@ export default function Header() {
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0">
               <div className="w-full flex justify-between lg:w-auto">
                 <a
-                  href="#"
+                  href="/"
                   aria-label="logo"
                   className="flex space-x-2 items-center"
                 >
@@ -31,7 +29,7 @@ export default function Header() {
                     <div className="h-6 w-2 bg-primary dark:bg-primaryLight"></div>
                   </div>
                   <span className="text-base font-bold text-gray-600 dark:text-white">
-                    SASS
+                    INVESTITSIYI
                   </span>
                 </a>
                 <label
@@ -82,18 +80,21 @@ export default function Header() {
                   <a
                     href="#"
                     className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                  >
+                  ><Link href="/Register">
                     <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
                       Sign Up
                     </span>
+                  </Link>
                   </a>
                   <a
                     href="#"
                     className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                   >
-                    <span className="relative text-sm font-semibold px-3 rounded-full py-2 bg-blue-700 hover:bg-blue-800 text-white dark:text-gray-900">
-                      Login
-                    </span>
+                    <Link href="/login">
+                      <span className="relative text-sm font-semibold px-3 rounded-full py-2 bg-blue-700 hover:bg-blue-800 text-white dark:text-gray-900">
+                        Login
+                      </span>
+                    </Link>
                   </a>
                 </div>
               </div>
