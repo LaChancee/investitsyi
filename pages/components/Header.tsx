@@ -1,7 +1,7 @@
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Header() {
   return (
@@ -54,7 +54,7 @@ export default function Header() {
                         href="#"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
-                        <span>Home</span>
+                        <span>Accueil</span>
                       </a>
                     </li>
                     <li>
@@ -62,7 +62,7 @@ export default function Header() {
                         href="#"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
-                        <span>Portfolio</span>
+                        <span>Fonctionnement</span>
                       </a>
                     </li>
                     <li>
@@ -70,7 +70,23 @@ export default function Header() {
                         href="#"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
-                        <span>Services</span>
+                        <span>Tarif</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
+                      >
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
+                      >
+                        <span>Blog</span>
                       </a>
                     </li>
                   </ul>
@@ -90,7 +106,7 @@ export default function Header() {
                     href="#"
                     className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                   >
-                    <Link href="/login">
+                    <Link href="/">
                       <span className="relative text-sm font-semibold px-3 rounded-full py-2 bg-blue-700 hover:bg-blue-800 text-white dark:text-gray-900">
                         Login
                       </span>
