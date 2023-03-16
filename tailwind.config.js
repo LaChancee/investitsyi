@@ -13,6 +13,7 @@ module.exports = {
         white:'#F8FDFF',
         secondary:'#D3DAFE',
         circle:"#AEB8FE80",
+        grey: '#F1F2F6',
       },
     },
   },
