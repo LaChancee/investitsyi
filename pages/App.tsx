@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import landingPage from 'public/image_landing_page.png'
+import wallet from 'public/step/wallet-bitcoin.png'
+import creditCard from 'public/step/credit-card.png'
+import balance from 'public/step/balance-crypto.png'
+import dollar from 'public/step/dolar-crypto.png'
+import cardDeco from 'public/cards-deco.png'
 import { GoogleFonts } from 'next-google-fonts'
 export default function App() {
   return (
-    <div className={"p-12 bg-white relative"}>
+    <div className={"p-12 bg-white relative overflow-hidden"}>
         <GoogleFonts href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" />
         <section className=" dark:bg-gray-900 relative">
             <div className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
@@ -38,7 +43,7 @@ export default function App() {
             </div>
         </section>
 
-        <section className="bg-white dark:bg-gray-900 ">
+        <section className="bg-white dark:bg-gray-900  ">
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
                     <div className="relative pl-16">
@@ -75,7 +80,158 @@ export default function App() {
                     </div>
                 </div>
             </div>
-            <div className={"absolute -bottom-72 -right-0 overflow-hidden z-0 w-1/2 h-1/2 bg-orange/30 rounded-full filter blur-3xl "}></div>
+        </section>
+        <section>
+            <div className="grid justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                <div className="max-w-screen-md  lg:mb-16">
+                    <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Comment investir avec <span className={"text-transparent bg-gradient-to-r bg-clip-text from-primary to-orange"}>
+                        Investytsiyi
+                    </span> </h2>
+                </div>
+                {/* Steps*/}
+                <div className={"grid grid-cols-4 gap-4 xs:grid-cols-1 max-lg:grid-cols-2 max-w-screen relative z-10"}>
+                    <div className={"grid gap-2 max-w-sm "}>
+                        <div className={"grid place-items-center"}>
+                            <Image src={wallet} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                        </div>
+                            <h2 className={"grid inline-block justify-items-center font-semibold text-lg py-2 bg-grey rounded-full"}>
+                                Étape 1
+                            </h2>
+
+
+                        <h2 className={"text-xl font-bold text-center"}>
+                            Évaluer votre
+                            profil d'investisseur
+                        </h2>
+                        <p className={"max-w-sm text-center"}>
+                            Commencez par évaluer votre
+                            profil d'investisseur pour
+                            déterminer votre tolérance au
+                            risque et vos objectifs financiers.
+                        </p>
+                    </div>
+
+                    <div className={"grid gap-2 max-w-sm"}>
+                        <div className={"grid place-items-center"}>
+                            <Image src={creditCard} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                        </div>
+                        <h2 className={"grid justify-items-center font-semibold text-lg p-2 bg-grey rounded-full"}>
+                            Étape 2
+                        </h2>
+
+                        <h2 className={"text-xl font-bold text-center"}>
+                            Étudier les options
+                            d'investissement
+                        </h2>
+                        <p className={"max-w-sm text-center"}>
+                            Étudiez attentivement les options
+                            d'investissement dans l'immobilier,
+                            la crypto et les NFT pour choisir
+                            les investissements les plus adaptés.
+                        </p>
+                    </div>
+
+                    <div className={"grid gap-2 max-w-sm"}>
+                        <div className={"grid place-items-center"}>
+                            <Image src={balance} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                        </div>
+                        <h2 className={"grid justify-items-center font-semibold text-lg p-2 bg-grey rounded-full"}>
+                            Étape 3
+                        </h2>
+
+                        <h2 className={"text-xl font-bold text-center"}>
+                            Planifier et gérer
+                            votre portefeuille
+                        </h2>
+                        <p className={"max-w-sm text-center"}>
+                            Planifiez et gérez votre portefeuille
+                            d'investissement en utilisant les
+                            outils et les ressources disponibles
+                            pour maximiser votre rendement.
+                        </p>
+                    </div>
+                    <div className={"grid gap-2 max-w-sm"}>
+                        <div className={"grid place-items-center"}>
+                            <Image src={dollar} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                        </div>
+                        <h2 className={"grid justify-items-center font-semibold text-lg p-2 bg-grey rounded-full"}>
+                            Étape 4
+                        </h2>
+
+                        <h2 className={"text-xl font-bold text-center"}>
+                            Surveiller et ajuster
+                            vos investissements
+                        </h2>
+                        <p className={"max-w-sm text-center"}>
+                            Surveillez régulièrement vos
+                            investissements et ajustez votre
+                            portefeuille en fonction
+                            des changements de marché.
+                        </p>
+                    </div>
+
+                </div>
+                <div className={"absolute -inset-y-26 -left-52  z-0 w-1/3 h-1/3 bg-orange/30 rounded-full filter blur-3xl "}></div>
+
+            </div>
+        </section>
+        <section>
+            <div className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/25 rounded-full filter blur-3xl "}></div>
+            {/* Partie orange */}
+            <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                <div className="max-w-screen-md  lg:mb-16">
+                    <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Nos objectifs et missions </h2>
+                </div>
+                <p className={'text-center text-lg max-w-5xl'}>
+                    Soutenir votre réussite financière à long terme en vous fournissant les outils, les ressources et l'éducation
+                    nécessaires pour faire des investissements judicieux dans l'immobilier, la crypto et les NFT : notre
+                    engagement chez Investytsiyi.
+                </p>
+            </div>
+            <div className={"grid grid-cols-2 grid-flow-dense relative z-10"}>
+                <div  className={"grid"}>
+                    <Image src={cardDeco} alt={"Cards and decoration"}/>
+                </div>
+                <div className={"grid grid-rows-3 py-12"}>
+                    <div className={"flex items-center row-auto  inline-block gap-6"}>
+                        <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                        <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
+                            Notre mission est de rendre les investissements accessibles à tous,
+                            quel que soit leur niveau d'expertise, afin que chacun puisse réaliser
+                            son potentiel financier.
+                        </p>
+                    </div>
+                    <div className={"flex items-center row-auto  inline-block gap-6"}>
+                        <div className={"h-20 min-h-20 bg-primary min-w-2  w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                        <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
+                            Nous nous engageons à vous aider à atteindre vos objectifs financiers à
+                            long terme en vous proposant des ressources pédagogiques de qualité
+                            supérieure pour vous guider dans vos investissements.
+                        </p>
+                    </div>
+                    <div className={"flex  items-center row-auto inline-block gap-6"}>
+                        <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                        <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
+                            Chez Investytsiyi, notre engagement est de vous aider à atteindre vos
+                            objectifs financiers à long terme grâce à des ressources pédagogiques
+                            de qualité supérieure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/30 rounded-full filter blur-3xl "}></div>
+            {/* Partie orange */}
+            <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                <div className="  lg:mb-16">
+                    <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez l’aventure avec Investytsiyi  </h2>
+                </div>
+                <p className={'text-center text-lg max-w-5xl'}>
+                    Nous sommes fiers de proposer des frais compétitifs, afin que vous puissiez maximiser vos rendements
+                    en investissant avec notre plateforme.
+                </p>
+            </div>
         </section>
 
     </div>
