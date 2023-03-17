@@ -51,18 +51,18 @@ export default function Header() {
                   <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
                     <li>
                       <a
-                        href="#"
+                        href="/"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Accueil</span>
                       </a>
                     </li><li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/AboutUs"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>A propos</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
