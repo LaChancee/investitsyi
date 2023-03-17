@@ -6,12 +6,11 @@ import balance from 'public/step/balance-crypto.png'
 import dollar from 'public/step/dolar-crypto.png'
 import cardDeco from 'public/cards-deco.png'
 import clientGars from 'public/customers/client1.jpg'
-import cliente from 'public/customers/cliente.jpg'
-import clienteSarah from 'public/customers/clienteSarah.jpg'
+
 import { GoogleFonts } from 'next-google-fonts'
 export default function App() {
   return (
-    <div className={"p-12 bg-white relative overflow-hidden"}>
+    <main className={"p-12 bg-white relative overflow-hidden"}>
         <GoogleFonts href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" />
         <section className=" dark:bg-gray-900 relative">
             <div className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
@@ -519,14 +518,10 @@ export default function App() {
                 </div>
                 <div className={"grid place-content-center"}>
                     <a className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Voir plus </a>
-
                 </div>
-
             </div>
-
         </section>
-
-    </div>
+    </main>
 
   );
 }
