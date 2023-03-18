@@ -15,7 +15,7 @@ export default function Header() {
           hidden
           aria-hidden="true"
         />  {/* shadow ici*/}
-        <nav className="fixed z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar shadow-md shadow-gray-600/5 peer-checked:navbar-active md:relative md:bg-transparent dark:shadow-none">
+        <nav className="fixed z-20  bg-white w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar shadow-md shadow-gray-600/5 peer-checked:navbar-active md:relative  dark:shadow-none">
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0">
               <div className="w-full flex justify-between lg:w-auto">
