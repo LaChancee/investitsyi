@@ -93,7 +93,7 @@ export default function AboutUs() {
                                 <h4 className={"text-6xl  p-3 place-self-center font-bold"}>
                                     +20
                                 </h4>
-                                <p className={"text-lg p-4"}>
+                                <p className={"text-lg p-4 text-center"}>
                                     Experts en investissement
                                 </p>
                             </div>
@@ -103,7 +103,7 @@ export default function AboutUs() {
                                 <h4 className={"text-6xl  p-3 place-self-center font-bold"}>
                                     +10k
                                 </h4>
-                                <p className={"text-lg p-4"}>
+                                <p className={"text-lg p-4 text-center"}>
                                     Utilisateurs satisfaits
                                 </p>
                             </div>
@@ -113,7 +113,7 @@ export default function AboutUs() {
                                 <h4 className={"text-6xl  p-3 place-self-center font-bold"}>
                                     96%
                                 </h4>
-                                <p className={"text-lg p-4"}>
+                                <p className={"text-lg p-4 text-center"}>
                                     Un taux de satisfaction client
                                 </p>
                             </div>
@@ -123,7 +123,7 @@ export default function AboutUs() {
                                 <h4 className={"text-6xl  p-3 place-self-center font-bold"}>
                                     +8k
                                 </h4>
-                                <p className={"text-lg p-4"}>
+                                <p className={"text-lg p-4 text-center"}>
                                     Articles publiés sur notre blog
                                 </p>
                             </div>
@@ -132,7 +132,7 @@ export default function AboutUs() {
                 </section>
                 <section>
                     <div className={"grid relative z-10 justify-items-center  px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
-                        <div className="max-w-screen-md  lg:mb-16">
+                        <div className="max-w-screen-md  lg:mb-8">
                             <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Notre mission </h2>
                         </div>
                         <p className={'text-center text-lg max-w-xl'}>
@@ -208,22 +208,22 @@ export default function AboutUs() {
                 </section>
                 <section>
                     <div className={"grid relative z-10 justify-items-center  px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
-                        <div className="max-w-screen-md  lg:mb-16">
+                        <div className="max-w-screen-lg gap-4 lg:mb-8">
                             <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Vous souhaitez prendre contact avec nous ? </h2>
                         </div>
-                        <p className={'text-center text-lg max-w-xl'}>
+                        <span className={'text-center text-xl mb-8 max-w-xl'}>
                             Nous sommes la pour vous
-                        </p>
-                        <p>
+                        </span>
+                        <p className={"max-w-xl text-center"}>
                             Nous sommes heureux de vous aider avec toutes vos questions et de recevoir vos commentaires.
                             Que ce soit pour discuter de nos offres, devenir partenaire ou simplement discuter de votre
                             expérience d'investissement, n'hésitez pas à nous contacter.
                         </p>
                     </div>
-                    <div className={"grid place-items-center py-6"}>
+                    <div className={"grid place-items-center py-4 mb-12"}>
                         <div>
                             <a href="#"
-                               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                               className="inline-flex items-center justify-center px-6 py-2 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                                 Nous contacter
                             </a>
                             <a className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Créer un compte </a>
