@@ -99,10 +99,10 @@ export default function Header() {
                   </ul>
                 </div>
 
-                <div className="w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
+                <div className="w-full  gap-2 space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
                   <a
                     href="#"
-                    className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                    className="relative flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                   ><Link href="/Register">
                     <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
                       Sign Up
