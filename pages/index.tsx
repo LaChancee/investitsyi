@@ -194,7 +194,7 @@ const App: React.FC = () => {
                 <section>
                     <div className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/25 rounded-full filter blur-3xl "}></div>
                     {/* Partie orange */}
-                    <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                    <div className={"grid relative z-10 justify-items-center py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="max-w-screen-md  lg:mb-16">
                             <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Nos objectifs et missions </h2>
                         </div>
@@ -208,7 +208,7 @@ const App: React.FC = () => {
                         <div  className={"grid"}>
                             <Image src={cardDeco} alt={"Cards and decoration"}/>
                         </div>
-                        <div className={"grid grid-rows-3 py-12"}>
+                        <div className={"flex flex-col  gap-9 justify-center"}>
                             <div className={"flex items-center row-auto  inline-block gap-6"}>
                                 <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
                                 <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
