@@ -1,6 +1,6 @@
 import React, {FormEvent, useState} from "react";
 
-
+import loader from "public/loader.svg"
 import Image from "next/image";
 import cardDeco from "public/cards-deco.png";
 import google from "public/Google.png";
@@ -42,8 +42,9 @@ const Register = () => {
                 // Store JWT token in local storage
                 localStorage.setItem('token', data.token);
 
+
                 // Redirect to homepage
-                window.location.href = '/';
+                window.location.href = '/Dashboard/Profile';
             }
         } catch (error) {
             console.error(error);
@@ -82,10 +83,12 @@ const Register = () => {
                         </div>
                         <div>
                             <div>
-                                {status === 'loading' && <div>Loading...</div>}
+                                {status === 'loading' && <div className={"flex"}>
+                                <Image src={loader} alt={loader} className={"flex justify-center "} width={30}/>
+                                </div>}
                                 {status === 'authenticated' && (
                                     <div>
-                                        <span className={"text-2xl font-semibold"}>Signed in as {session.user?.email}</span>
+                                        <span className={"flex text-2xl justify-center font-semibold"}>Signed in as {session.user?.email}</span>
                                         <button
                                             className="flex px-2 font-semibold  items-center justify-center transition hover:bg-grey border rounded-xl border-white shadow shadow-3xl shadow-lightblue/30 "
                                             onClick={() => signOut()}>Sign out</button>
@@ -190,7 +193,7 @@ const Register = () => {
                                 <button type="submit" className={"inline-flex w-fit items-center justify-center px-6 py-2 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"}>
                                     Valider l'inscription
                                 </button>
-                                <a href={"/"} className={"text-lg text-primary self-center hover:underline"}>Annuler </a>
+                                <a href={"/"} className={"text-md text-primary self-center hover:underline"}>Annuler </a>
                             </div>
                             <span>Vous avez déjà un compte? <a href={"/login"} className={"text-primary underline underline-offset-2"}>Connectez-vous </a> </span>
 
