@@ -144,7 +144,7 @@ export default function AboutUs() {
                         <div  className={"grid relative z-10"}>
                             <Image src={cardDeco} alt={"Cards and decoration"}/>
                         </div>
-                        <div className={"grid grid-rows-3 py-6"}>
+                        <div className={"flex flex-col py-6 gap-9 justify-center "}>
                             <div className={"flex items-center row-auto  inline-block gap-6"}>
                                 <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-3xl "}></div>
                                 <p className={"max-w-xl: ml-2 p-9  -mr-6 text-justify inline-block"}>
