@@ -1,15 +1,20 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import NextAuth from 'next-auth';
+import NextAuth, {NextAuthOptions, User} from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import {prisma, PrismaClient} from '@prisma/client';
 
-const options = {
+const options: NextAuthOptions = {
+
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID || '',
             clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
         }),
+
     ],
-    secret: process.env.JWT_SECRET
+    secret: process.env.JWT_SECRET,
+
 };
 
 export default (req: NextApiRequest, res: NextApiResponse) => NextAuth(req, res, options);
