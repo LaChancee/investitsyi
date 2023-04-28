@@ -1,5 +1,7 @@
 import Link from "next/link";
 import {signOut, useSession} from "next-auth/react";
+import Image from "next/image";
+import logo from "public/Logo-investitsiyi.svg"
 
 
 
@@ -21,20 +23,10 @@ export default function Header() {
         <nav className="fixed z-20  bg-white w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar shadow-md shadow-gray-600/5 peer-checked:navbar-active md:relative  dark:shadow-none">
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0">
-              <div className="w-full flex justify-between lg:w-auto">
-                <a
-                  href="/"
-                  aria-label="logo"
-                  className="flex space-x-2 items-center"
-                >
-                  <div aria-hidden="true" className="flex space-x-1">
-                    <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-gray-200"></div>
-                    <div className="h-6 w-2 bg-primary dark:bg-primaryLight"></div>
-                  </div>
-                  <span className="text-base font-bold text-gray-600 dark:text-white">
-                    INVESTITSIYI
-                  </span>
-                </a>
+              <div className="w-full flex justify-between lg:w-fit">
+                <Link href={"/"} >
+                  <Image src={logo} alt={"Logo Investytsiyi"} width={150}/>
+                </Link>
                 <label
                   htmlFor="hbr"
                   className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
@@ -53,12 +45,12 @@ export default function Header() {
                 <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
                   <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
                     <li>
-                      <a
+                      <Link
                         href="/"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Accueil</span>
-                      </a>
+                      </Link>
                     </li><li>
                       <Link
                         href="/AboutUs"
@@ -84,20 +76,20 @@ export default function Header() {
                       </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/contact"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Contact</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/blog"
                         className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                       >
                         <span>Blog</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -135,16 +127,16 @@ export default function Header() {
                     </span>
                         </Link>
                         </a>
-                        <a
-                            href="#"
+                        <Link
+                            href="/Login/Login"
                             className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                         >
 
-                      <button className="relative text-sm font-semibold px-3 rounded-full py-2 text-white dark:text-gray-900" onClick={() => signOut()}>
+                      <button className="relative text-sm font-semibold px-3 rounded-full py-2 text-white dark:text-gray-900">
                         Login
                       </button>
 
-                        </a>
+                        </Link>
                       </div>
                   )
 
