@@ -9,6 +9,7 @@ import clientGars from 'public/customers/client1.jpg'
 import { GoogleFonts } from 'next-google-fonts'
 import Layout from "./Layout";
 import Link from "next/link";
+
 const App: React.FC = () => {
     return (
         <Layout>
@@ -300,9 +301,9 @@ const App: React.FC = () => {
                                     <span className={"text-lg"}>Étape de préparation pour les débutants.</span>
                                 </li>
                             </ul>
-                            <a href="#"
-                               className="text-grey-100 bg-lightblue transition py-4 hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</a>
-                            <a href={'#'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</a>
+                            <Link href="/Register"
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
+                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
                         </div>
                         {/*// <!-- Pricing Card -->*/}
                         <div
@@ -357,9 +358,9 @@ const App: React.FC = () => {
                                     <span  className={"text-lg"}>Support client prioritaire pour résoudre rapidement les problèmes.</span>
                                 </li>
                             </ul>
-                            <a href="#"
-                               className="text-grey-100 bg-lightblue transition py-4 hover:bg-primary hover:text-white  focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</a>
-                            <a href={'#'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</a>
+                            <Link href="/Register"
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
+                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
 
                         </div>
                         {/*// <!-- Pricing Card -->*/}
@@ -413,9 +414,9 @@ const App: React.FC = () => {
                                     <span className={"text-lg"}>Outils de recherche avancés pour identifier les meilleures opportunités.</span>
                                 </li>
                             </ul>
-                            <a href="#"
-                               className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</a>
-                            <a href={'#'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</a>
+                            <Link href="/Register"
+                               className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
+                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
                         </div>
                     </div>
                     <div/>
@@ -519,7 +520,7 @@ const App: React.FC = () => {
                             </div>
                         </div>
                         <div className={"grid place-content-center"}>
-                            <a className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Voir plus </a>
+                            <Link href={"/faq"} className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Voir plus </Link>
                         </div>
                     </div>
                 </section>
