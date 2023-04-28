@@ -1,14 +1,22 @@
-import React, {FormEvent, useState} from "react";
+import React from "react";
 import DashboardLayout from "./DashboardLayout";
-import {useSession} from "next-auth/react";
+import { useSession} from 'next-auth/react'
+
+
+
 
 
 const Profile = () => {
-    const {data:session} = useSession()
+
+    const { data: session, status } = useSession()
+
+
+
+
     return (
         <DashboardLayout>
             <section>
-                <h1>Bonjour {session?.user?.name} </h1>
+               <span className={"block text-2xl font-bold text-gray-800 sm:text-3xl dark:text-white"}> Bienvenue {session?.user?.name}</span>
             </section>
         </DashboardLayout>
         )
