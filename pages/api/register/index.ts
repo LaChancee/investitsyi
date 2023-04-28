@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client";
+import jwt from "jsonwebtoken";
 
 const prisma = new PrismaClient();
 
@@ -14,16 +15,19 @@ export default async function createUser(req: NextApiRequest, res: NextApiRespon
                 first_name,
                 name,
                 password: hashedPassword,
-                pseudo_name,
-                address,
-                town,
-                zipcode,
                 subtype,
                 usertype
 
             },
         });
-        res.status(200).json(user);
+
+
+        // Générer un token JWT
+        const token = jwt.sign({ userId: user.id }, "secretKey", { expiresIn: '1h' });
+
+
+        // Envoyer la réponse avec le token JWT
+        return res.status(200).json({ token });
     } catch (err) {
         console.error(err);
         res.status(500).json({ message: "Unable to create user." });
