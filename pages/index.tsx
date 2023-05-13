@@ -6,29 +6,33 @@ import balance from 'public/step/balance-crypto.png'
 import dollar from 'public/step/dolar-crypto.png'
 import cardDeco from 'public/cards-deco.png'
 import clientGars from 'public/customers/client1.jpg'
-import { GoogleFonts } from 'next-google-fonts'
+import {GoogleFonts} from 'next-google-fonts'
 import Layout from "./Layout";
 import Link from "next/link";
 
 const App: React.FC = () => {
     return (
         <Layout>
-            <main  className={"p-12 bg-white relative overflow-hidden"}>
-                <GoogleFonts href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" />
+            <main className={"p-12 bg-white relative overflow-hidden"}>
+                <GoogleFonts href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"/>
                 <section className=" dark:bg-gray-900 relative">
-                    <div className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
+                    <div
+                        className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
 
-                    <div className="grid relative z-10 max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                    <div
+                        className="grid relative z-10 max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div className="mr-auto place-self-center lg:col-span-7">
                             <h1 className="max-w-2xl mb-4 text-4xl font-bold
                     tracking-tight leading-loose md:text-5xl
                     xl:text-7xl dark:text-white">
                                 Votre guide pour des investissements réussis
                             </h1>
-                            <p className="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Découvrez les tendances du marché, apprenez les astuces des investisseurs les plus prospères et investissez en toute confiance avec notre plateforme.
+                            <p className="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Découvrez
+                                les tendances du marché, apprenez les astuces des investisseurs les plus prospères et
+                                investissez en toute confiance avec notre plateforme.
                             </p>
                             <Link href="/AboutUs"
-                               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                                  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                                 Nous découvrir dès maintenant
                                 <svg className="w-5 h-5 ml-2 -mr-1 " fill="currentColor" viewBox="0 0 20 20"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -50,10 +54,12 @@ const App: React.FC = () => {
 
                 <section className="bg-white dark:bg-gray-900  ">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
+                        <div
+                            className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
                             <div className="relative pl-16">
                                 <dt className=" font-semibold leading-7 text-black">
-                                    <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
+                                    <div
+                                        className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
                                         <svg className="w-5 h-5 text-black"
                                              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -64,12 +70,15 @@ const App: React.FC = () => {
                                     Investir dans l'avenir,
                                     c'est maintenant
                                 </dt>
-                                <dd className="mt-2  leading-7 text-gray-900">Découvrez comment investir dans l'immobilier, la crypto et les NFT avec notre plateforme éducative.</dd>
+                                <dd className="mt-2  leading-7 text-gray-900">Découvrez comment investir dans
+                                    l'immobilier, la crypto et les NFT avec notre plateforme éducative.
+                                </dd>
                             </div>
 
                             <div className="relative pl-16">
                                 <dt className="text-base font-semibold leading-7 text-black">
-                                    <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
+                                    <div
+                                        className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
                                         <svg className="w-5 h-5 text-black"
                                              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -79,9 +88,11 @@ const App: React.FC = () => {
                                     Des investissements
                                     réussis à portée de main
                                 </dt>
-                                <dd className="mt-2 text-base leading-7 text-gray-600">Rejoignez la communauté Investytsiyi et apprenez
+                                <dd className="mt-2 text-base leading-7 text-gray-600">Rejoignez la communauté
+                                    Investytsiyi et apprenez
                                     à investir comme un pro pour préparer votre
-                                    avenir financier.</dd>
+                                    avenir financier.
+                                </dd>
                             </div>
                         </div>
                     </div>
@@ -89,22 +100,25 @@ const App: React.FC = () => {
                 <section>
                     <div className="grid justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <div className="max-w-screen-md  lg:mb-12">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Comment investir avec <span className={"text-transparent bg-gradient-to-r bg-clip-text from-primary to-orange"}>
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Comment
+                                investir avec <span
+                                    className={"text-transparent bg-gradient-to-r bg-clip-text from-primary to-orange"}>
                         Investytsiyi
-                    </span> </h2>
+                    </span></h2>
                         </div>
                         {/* Steps*/}
-                        <div className={"grid grid-cols-4 gap-4 xs:grid-cols-1 max-lg:grid-cols-2 max-w-screen relative z-10"}>
+                        <div
+                            className={"grid grid-cols-4 gap-4 xs:grid-cols-1 max-lg:grid-cols-2 max-w-screen relative z-10"}>
                             <div className={"grid gap-2 max-w-sm "}>
                                 <div className={"grid place-items-center"}>
-                                    <Image src={wallet} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                                    <Image src={wallet} alt={"wallet-crypto"} width={155} height={167}
+                                           className={"mb-9 place-item-center "}/>
                                 </div>
                                 <div className={" grid place-content-center"}>
                                     <h2 className={"grid w-fit place-content-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
                                         Étape 1
                                     </h2>
                                 </div>
-
 
 
                                 <h2 className={"text-xl font-semibold text-center"}>
@@ -121,7 +135,8 @@ const App: React.FC = () => {
 
                             <div className={"grid gap-2 max-w-sm"}>
                                 <div className={"grid place-items-center"}>
-                                    <Image src={creditCard} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                                    <Image src={creditCard} alt={"wallet-crypto"} width={155} height={167}
+                                           className={"mb-9 place-item-center "}/>
                                 </div>
                                 <div className={"grid place-content-center"}>
                                     <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
@@ -144,7 +159,8 @@ const App: React.FC = () => {
 
                             <div className={"grid gap-2 max-w-sm"}>
                                 <div className={"grid place-items-center"}>
-                                    <Image src={balance} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                                    <Image src={balance} alt={"wallet-crypto"} width={155} height={167}
+                                           className={"mb-9 place-item-center "}/>
                                 </div>
                                 <div className={"grid place-content-center"}>
                                     <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
@@ -166,7 +182,8 @@ const App: React.FC = () => {
                             </div>
                             <div className={"grid gap-2 max-w-sm"}>
                                 <div className={"grid place-items-center"}>
-                                    <Image src={dollar} alt={"wallet-crypto"} width={155} height={167} className={"mb-9 place-item-center "}/>
+                                    <Image src={dollar} alt={"wallet-crypto"} width={155} height={167}
+                                           className={"mb-9 place-item-center "}/>
                                 </div>
                                 <div className={"grid place-content-center"}>
                                     <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
@@ -188,30 +205,37 @@ const App: React.FC = () => {
                             </div>
 
                         </div>
-                        <div className={"absolute -inset-y-26 -left-52  z-0 w-1/3 h-1/3 bg-orange/30 rounded-full filter blur-3xl "}></div>
+                        <div
+                            className={"absolute -inset-y-26 -left-52  z-0 w-1/3 h-1/3 bg-orange/30 rounded-full filter blur-3xl "}></div>
 
                     </div>
                 </section>
                 <section>
-                    <div className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/25 rounded-full filter blur-3xl "}></div>
+                    <div
+                        className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/25 rounded-full filter blur-3xl "}></div>
                     {/* Partie orange */}
-                    <div className={"grid relative z-10 justify-items-center py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                    <div
+                        className={"grid relative z-10 justify-items-center py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="max-w-screen-md  lg:mb-16">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Nos objectifs et missions </h2>
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Nos
+                                objectifs et missions </h2>
                         </div>
                         <p className={'text-center text-lg max-w-5xl'}>
-                            Soutenir votre réussite financière à long terme en vous fournissant les outils, les ressources et l'éducation
-                            nécessaires pour faire des investissements judicieux dans l'immobilier, la crypto et les NFT : notre
+                            Soutenir votre réussite financière à long terme en vous fournissant les outils, les
+                            ressources et l'éducation
+                            nécessaires pour faire des investissements judicieux dans l'immobilier, la crypto et les NFT
+                            : notre
                             engagement chez Investytsiyi.
                         </p>
                     </div>
                     <div className={"grid grid-cols-2 grid-flow-dense relative z-10"}>
-                        <div  className={"grid"}>
+                        <div className={"grid"}>
                             <Image src={cardDeco} alt={"Cards and decoration"}/>
                         </div>
                         <div className={"flex flex-col  gap-9 justify-center"}>
                             <div className={"flex items-center row-auto  inline-block gap-6"}>
-                                <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                                <div
+                                    className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
                                 <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
                                     Notre mission est de rendre les investissements accessibles à tous,
                                     quel que soit leur niveau d'expertise, afin que chacun puisse réaliser
@@ -219,7 +243,8 @@ const App: React.FC = () => {
                                 </p>
                             </div>
                             <div className={"flex items-center row-auto  inline-block gap-6"}>
-                                <div className={"h-20 min-h-20 bg-primary min-w-2  w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                                <div
+                                    className={"h-20 min-h-20 bg-primary min-w-2  w-2 rounded-full shadow-primary shadow-2xl "}></div>
                                 <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
                                     Nous nous engageons à vous aider à atteindre vos objectifs financiers à
                                     long terme en vous proposant des ressources pédagogiques de qualité
@@ -227,7 +252,8 @@ const App: React.FC = () => {
                                 </p>
                             </div>
                             <div className={"flex  items-center row-auto inline-block gap-6"}>
-                                <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
+                                <div
+                                    className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
                                 <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
                                     Chez Investytsiyi, notre engagement est de vous aider à atteindre vos
                                     objectifs financiers à long terme grâce à des ressources pédagogiques
@@ -238,14 +264,18 @@ const App: React.FC = () => {
                     </div>
                 </section>
                 <section className={"relative z-10 pb-8"}>
-                    <div className={"absolute bottom-22 -right-48  z-0 w-1/2 h-1/2 bg-circle/30 rounded-full filter blur-3xl "}></div>
+                    <div
+                        className={"absolute bottom-22 -right-48  z-0 w-1/2 h-1/2 bg-circle/30 rounded-full filter blur-3xl "}></div>
                     {/* Partie orange */}
-                    <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                    <div
+                        className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="  lg:mb-12">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez l’aventure avec Investytsiyi  </h2>
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez
+                                l’aventure avec Investytsiyi </h2>
                         </div>
                         <p className={'text-center text-lg max-w-5xl'}>
-                            Nous sommes fiers de proposer des frais compétitifs, afin que vous puissiez maximiser vos rendements
+                            Nous sommes fiers de proposer des frais compétitifs, afin que vous puissiez maximiser vos
+                            rendements
                             en investissant avec notre plateforme.
                         </p>
                     </div>
@@ -268,7 +298,8 @@ const App: React.FC = () => {
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                               clip-rule="evenodd"></path>
                                     </svg>
-                                    <span className={"text-lg"}>Accès gratuit à notre plateforme d'investissement.</span>
+                                    <span
+                                        className={"text-lg"}>Accès gratuit à notre plateforme d'investissement.</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
@@ -302,8 +333,11 @@ const App: React.FC = () => {
                                 </li>
                             </ul>
                             <Link href="/Register"
-                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
-                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire
+                                pour la version d'essai</Link>
+                            <Link href={'/Pricing'}
+                                  className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les
+                                caractéristiques</Link>
                         </div>
                         {/*// <!-- Pricing Card -->*/}
                         <div
@@ -313,7 +347,8 @@ const App: React.FC = () => {
                                 <span className="mr-2  text-xl text-primary font-semibold">€15 / mois</span>
 
                             </div>
-                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Ou facturé annuellement</p>
+                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Ou facturé
+                                annuellement</p>
 
                             {/*// <!-- List -->*/}
                             <ul role="list" className="mb-8 space-y-4 text-left">
@@ -325,7 +360,7 @@ const App: React.FC = () => {
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                               clip-rule="evenodd"></path>
                                     </svg>
-                                    <span  className={"text-lg"}>Outils de gestion de portefeuille avancés.</span>
+                                    <span className={"text-lg"}>Outils de gestion de portefeuille avancés.</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
@@ -335,7 +370,7 @@ const App: React.FC = () => {
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                               clip-rule="evenodd"></path>
                                     </svg>
-                                    <span  className={"text-lg"}>Ressources éducatives avancées pour améliorer vos compétences.</span>
+                                    <span className={"text-lg"}>Ressources éducatives avancées pour améliorer vos compétences.</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
@@ -355,12 +390,15 @@ const App: React.FC = () => {
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                               clip-rule="evenodd"></path>
                                     </svg>
-                                    <span  className={"text-lg"}>Support client prioritaire pour résoudre rapidement les problèmes.</span>
+                                    <span className={"text-lg"}>Support client prioritaire pour résoudre rapidement les problèmes.</span>
                                 </li>
                             </ul>
                             <Link href="/Register"
-                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
-                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire
+                                pour la version d'essai</Link>
+                            <Link href={'/Pricing'}
+                                  className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les
+                                caractéristiques</Link>
 
                         </div>
                         {/*// <!-- Pricing Card -->*/}
@@ -370,7 +408,8 @@ const App: React.FC = () => {
                             <div className="flex justify-center items-baseline my-4">
                                 <span className="mr-2 text-xl text-orange font-semibold">25€ / mois</span>
                             </div>
-                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Ou facturé annuellement</p>
+                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Ou facturé
+                                annuellement</p>
                             {/*// <!-- List -->*/}
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
@@ -381,7 +420,7 @@ const App: React.FC = () => {
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                               clip-rule="evenodd"></path>
                                     </svg>
-                                    <span  className={"text-lg"}>Investissement diversifié dans l'immobilier, la crypto et les NFT.</span>
+                                    <span className={"text-lg"}>Investissement diversifié dans l'immobilier, la crypto et les NFT.</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
@@ -415,17 +454,23 @@ const App: React.FC = () => {
                                 </li>
                             </ul>
                             <Link href="/Register"
-                               className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire pour la version d'essai</Link>
-                            <Link href={'/Pricing'} className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les caractéristiques</Link>
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire
+                                pour la version d'essai</Link>
+                            <Link href={'/Pricing'}
+                                  className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les
+                                caractéristiques</Link>
                         </div>
                     </div>
                     <div/>
                 </section>
                 <section>
-                    <div className={"absolute bottom-92 -right-72 z-0 w-1/2 h-1/2 bg-orange/25 rounded-full filter blur-3xl "}></div>
-                    <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                    <div
+                        className={"absolute bottom-92 -right-72 z-0 w-1/2 h-1/2 bg-orange/25 rounded-full filter blur-3xl "}></div>
+                    <div
+                        className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="  lg:mb-12">
-                            <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Les avis de nos clients </h2>
+                            <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Les
+                                avis de nos clients </h2>
                         </div>
                         <p className={'text-center text-lg max-w-5xl'}>
                             Les histoires inspirantes de nos clients qui ont réussi dans l'investissement.
@@ -434,51 +479,72 @@ const App: React.FC = () => {
 
                     <div className={"flex items-center md:flex-cols-3 relative z-10"}>
                         <div className={"flex-none bg-grey-100 px-4"}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className={"self-center"} height="48" width="48"><path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className={"self-center"} height="48" width="48">
+                                <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z"/>
+                            </svg>
                         </div>
                         <div className={"grid grid-cols-4 gap-6 col-span-2 place-items-center "}>
-                            <div className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
+                            <div
+                                className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
                                 <div className={"relative h-3 w-24 inline-block"}>
-                                    <Image src={clientGars} alt={"Image de faux client"} className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"} width={250} height={250}/>
+                                    <Image src={clientGars} alt={"Image de faux client"}
+                                           className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"}
+                                           width={250} height={250}/>
                                 </div>
                                 <h3 className={"text-lg text-primary font-semibold"}>THOMAS DUPONT</h3>
-                                <p className={"text-justify"}>Je suis très satisfait des résultats que j'ai obtenus avec Investytsiyi.
+                                <p className={"text-justify"}>Je suis très satisfait des résultats que j'ai obtenus avec
+                                    Investytsiyi.
                                     J'ai utilisé la plateforme pour investir dans l'immobilier et
                                     j'ai pu obtenir un flux de revenus passif très intéressant.
                                 </p>
                             </div>
 
-                            <div className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
+                            <div
+                                className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
                                 <div className={"relative h-3 w-24 inline-block"}>
-                                    <Image src={clientGars} alt={"Image de faux client"} className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"} width={200} height={200}/>
+                                    <Image src={clientGars} alt={"Image de faux client"}
+                                           className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"}
+                                           width={200} height={200}/>
                                 </div>
                                 <h3 className={"text-lg text-primary  font-semibold"}>SARAH MARTIN</h3>
-                                <p className={"text-justify"}>Grâce à Investytsiyi, j'ai réussi à investir dans des NFT et j'ai obtenu des rendements incroyables en peu de temps. Je recommande vivement cette plateforme.
+                                <p className={"text-justify"}>Grâce à Investytsiyi, j'ai réussi à investir dans des NFT
+                                    et j'ai obtenu des rendements incroyables en peu de temps. Je recommande vivement
+                                    cette plateforme.
                                 </p>
                             </div>
-                            <div className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
+                            <div
+                                className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
                                 <div className={"relative h-3 w-24 inline-block"}>
-                                    <Image src={clientGars} alt={"Image de faux client"} className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"} width={200} height={200}/>
+                                    <Image src={clientGars} alt={"Image de faux client"}
+                                           className={"absolute z-0 w-250 h-250 -top-20 w-full rounded-full"}
+                                           width={200} height={200}/>
                                 </div>
                                 <h3 className={"text-lg text-primary font-semibold"}>PIERRE DURANT</h3>
-                                <p className={"text-justify"}>Je cherchais une plateforme qui me permettrait d'investir dans l'immobilier de manière simple et efficace,
+                                <p className={"text-justify"}>Je cherchais une plateforme qui me permettrait d'investir
+                                    dans l'immobilier de manière simple et efficace,
                                     et j'ai trouvé Investytsiyi.
                                     J'ai été impressionné par la qualité des informations proposés.
                                 </p>
                             </div>
 
-                            <div className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
+                            <div
+                                className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
                                 <div className={"relative h-3 w-24 inline-block"}>
-                                    <Image src={clientGars} alt={"Image de faux client"} className={"absolute z-0 w-250 h-4/8 -top-20 w-full bg-center object-scale-down rounded-full"} width={200} height={100}/>
+                                    <Image src={clientGars} alt={"Image de faux client"}
+                                           className={"absolute z-0 w-250 h-4/8 -top-20 w-full bg-center object-scale-down rounded-full"}
+                                           width={200} height={100}/>
                                 </div>
                                 <h3 className={"text-lg text-primary font-semibold"}>MARIE LEBLANC</h3>
-                                <p className={"text-justify"}>Investytsiyi m'a permis de me lancer dans l'investissement dans la crypto-monnaie, même si je n'avais pas d'expérience dans ce domaine.
+                                <p className={"text-justify"}>Investytsiyi m'a permis de me lancer dans l'investissement
+                                    dans la crypto-monnaie, même si je n'avais pas d'expérience dans ce domaine.
                                     J'ai réussi à obtenir des rendements impressionnants.
                                 </p>
                             </div>
                         </div>
                         <div className={"flex-none items-center px-4"}>
-                            <svg xmlns="http://www.w3.org/2000/svg" className={"self-center "} height="48" width="48"><path d="m15.2 43.9-2.8-2.85L29.55 23.9 12.4 6.75l2.8-2.85 20 20Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className={"self-center "} height="48" width="48">
+                                <path d="m15.2 43.9-2.8-2.85L29.55 23.9 12.4 6.75l2.8-2.85 20 20Z"/>
+                            </svg>
                         </div>
 
 
@@ -486,41 +552,66 @@ const App: React.FC = () => {
 
                 </section>
                 <section className={"relative z-10"}>
-                    <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
+                    <div
+                        className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="  lg:mb-12">
-                            <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Vos questions les plus fréquentes</h2>
+                            <h2 className=" text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Vos
+                                questions les plus fréquentes</h2>
                         </div>
                         <p className={'text-center text-lg max-w-2xl'}>
-                            Nous nous basons sur vos nombreux retours pour essayer de répondre à vos interrogations et attentes.
+                            Nous nous basons sur vos nombreux retours pour essayer de répondre à vos interrogations et
+                            attentes.
                         </p>
                     </div>
                     <div className={"flex flex-col px-12 gap-4"}>
-                        <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment créer un compte sur votre plateforme ?</p>
+                        <div
+                            className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
+                            <p className={"self-center text-lg font-semibold"}>Comment créer un compte sur votre
+                                plateforme ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24"
+                                     width="24">
+                                    <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Quel est le montant minimum pour investir ?</p>
+                        <div
+                            className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
+                            <p className={"self-center text-lg font-semibold"}>Quel est le montant minimum pour investir
+                                ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24"
+                                     width="24">
+                                    <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                        <div
+                            className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service
+                                client d'Investytsiyi en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24"
+                                     width="24">
+                                    <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/>
+                                </svg>
                             </div>
                         </div>
-                        <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Quels sont les types d'investissements disponibles sur la plateforme ?</p>
+                        <div
+                            className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
+                            <p className={"self-center text-lg font-semibold"}>Quels sont les types d'investissements
+                                disponibles sur la plateforme ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24"
+                                     width="24">
+                                    <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/>
+                                </svg>
                             </div>
                         </div>
                         <div className={"grid place-content-center"}>
-                            <Link href={"/faq"} className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Voir plus </Link>
+                            <Link href={"/faq"}
+                                  className={" w-fit  rounded-full border transition hover:bg-primary hover:text-white hover:shadow-xl hover:shadow-primary/30  border-primary text-primary border-2 text-md mt-5 px-6 py-2"}> Voir
+                                plus </Link>
                         </div>
                     </div>
                 </section>
