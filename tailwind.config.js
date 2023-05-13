@@ -20,6 +20,7 @@ module.exports = {
         midGradient: "#BAC2F54D",
         endGradient: "#AEB8FE99",
         cardTransparent: "#E0E3F44D",
+
       },
     },
   },
