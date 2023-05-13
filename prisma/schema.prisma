@@ -48,24 +48,13 @@ model Post {
   author    User     @relation(fields: [authorId], references: [id])
 }
 
-model Product {
-  id             Int             @id @default(autoincrement())
-  name           String          @db.VarChar(255)
-  single_Product SingleProduct[]
-  Article        Articles[]
-}
-
-model SingleProduct {
-  id        Int     @id @default(autoincrement())
-  name      String
-  productId Int
-  category  Product @relation(fields: [productId], references: [id])
-}
-
 model Articles {
-  id        Int     @id @default(autoincrement())
-  title     String
-  subTitle  String
-  productId Int
-  Product   Product @relation(fields: [productId], references: [id])
+  id           Int      @id @default(autoincrement())
+  title        String
+  subTitle     String
+  description  String
+  category     String
+  coverPicture String
+  createdAt    DateTime @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime @default(now()) @db.Timestamp(6)
 }
