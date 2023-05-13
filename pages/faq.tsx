@@ -9,6 +9,7 @@ const Faq = ()=> {
     return(
         <Layout>
             <div className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
+
             <section className=" dark:bg-gray-900 relative">
                 <div className="grid relative z-10 max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="grid place-content-end hidden lg:mt-0 lg:col-span-5 lg:flex top-1/3">
@@ -28,6 +29,8 @@ const Faq = ()=> {
 
                 </div>
             </section>
+            <div className={"absolute bottom-92 -right-72 z-0 w-1/2 h-full bg-orange/25 rounded-full filter blur-3xl "}></div>
+
             <div className={"grid gap-20 px-20 py-10"}>
                 <section className={"relative z-10"}>
                     <h2 className={"px-12 text-3xl mb-4"}>Fonctionnement</h2>
@@ -60,6 +63,7 @@ const Faq = ()=> {
                 </section>
                 {/*Section Marketplace*/}
                 <section className={"relative z-10"}>
+                    <div className={"absolute -left-48 z-0 -top-48 z-0 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
                     <h2 className={"px-12 text-3xl mb-4"}>Marketplace</h2>
                     <div className={"flex flex-col px-12 gap-4"}>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
