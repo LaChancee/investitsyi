@@ -14,132 +14,35 @@ const DashboardLayout = ({ children }: LayoutProps) => {
 
     return (
 
-                <body className="bg-gray-100 dark:bg-gray-900">
+                <body className="bg-white h-screen dark:bg-gray-900">
                 <aside
-                    className="fixed top-0 z-10 ml-[-100%] flex h-screen w-full flex-col justify-between border-r bg-white px-8 pb-3 transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] dark:bg-gray-800 dark:border-gray-700"
+                    className="fixed top-0 z-10 ml-[-100%] flex h-screen w-fit flex-col justify-between border-r bg-dark px-8 pb-3 transition duration-300 md:w-4/12 lg:ml-0 lg:w-[15%] xl:w-[10%] 2xl:w-[5%] dark:bg-gray-800 dark:border-gray-700"
                 >
                     <div>
-                        <div className="-mx-6 px-6 py-4">
+                        <div className="py-4">
                             <Link href="/" title="home">
-                                <span className="text-base font-bold text-gray-600 dark:text-white">
-                        INVESTITSIYI
+                                <span className="text-base font-bold text-white dark:text-white">
+                        LOGO
                       </span>
                             </Link>
                         </div>
 
-                        <div className="mt-8 text-center">
-                            <Image src={user} alt={"user picture+"} className={"rounded-full"} width={200} height={200}
-                            ></Image>
-                            <h5 className="mt-4 hidden text-xl font-semibold text-gray-600 lg:block dark:text-gray-300">{session?.user?.name}</h5>
-                            <span className="hidden text-gray-400 lg:block">Admin</span>
+                        <div className="  mt-8 text-center ">
+                            <div className={"grid place-items-center"}>
+                                <Image src={user} alt={"user picture w-full"} className={"rounded-full "} width={150} height={150}
+                                ></Image>
+                            </div>
                         </div>
 
                         <ul className="mt-8 space-y-2 tracking-wide">
-                            <li>
-                                <a
-                                    href="#"
-                                    aria-label="dashboard"
-                                    className="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-primary to-orange/30 px-4 py-3 text-white"
-                                >
-                                    <svg className="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z"
-                                            className="dark:fill-slate-600 fill-current text-cyan-400"
-                                        ></path>
-                                        <path
-                                            d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z"
-                                            className="fill-current text-cyan-200 group-hover:text-cyan-300"
-                                        ></path>
-                                        <path
-                                            d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z"
-                                            className="fill-current group-hover:text-sky-300"
-                                        ></path>
-                                    </svg>
-                                    <span className="-mr-1 font-medium">Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-5 w-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            className="fill-current text-gray-600 group-hover:text-cyan-600 dark:group-hover:text-primary"
-                                            fill-rule="evenodd"
-                                            d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                            clip-rule="evenodd"
-                                        />
-                                        <path
-                                            className="fill-current text-gray-300 group-hover:text-primary"
-                                            d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"
-                                        />
-                                    </svg>
-                                    <span
-                                        className="group-hover:text-gray-700 dark:group-hover:text-gray-50">Mes investissements</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-5 w-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            className="fill-current text-gray-600 group-hover:text-cyan-600 dark:group-hover:text-sky-400"
-                                            fill-rule="evenodd"
-                                            d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                            clip-rule="evenodd"
-                                        />
-                                        <path
-                                            className="fill-current text-gray-300 group-hover:text-primary"
-                                            d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"
-                                        />
-                                    </svg>
-                                    <span className="group-hover:text-gray-700 dark:group-hover:text-gray-50">Mes informations </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-5 w-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            className="fill-current text-gray-300 group-hover:text-primary"
-                                            d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"
-                                        />
-                                        <path
-                                            className="fill-current text-gray-600 group-hover:text-cyan-600 dark:group-hover:text-sky-400"
-                                            fill-rule="evenodd"
-                                            d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                    <span className="group-hover:text-gray-700 dark:group-hover:text-white">Finance</span>
-                                </a>
-                            </li>
+                            ?
+
                         </ul>
                     </div>
 
-                    <div className="-mx-6 flex items-center justify-between border-t px-6 pt-4 dark:border-gray-700">
+                    <div className="  border-t pt-4 dark:border-gray-700">
                         <button
-                            className="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                            className="group space-x-4 rounded-md py-3 text-white dark:text-gray-300">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-6 w-6"
@@ -154,15 +57,22 @@ const DashboardLayout = ({ children }: LayoutProps) => {
                                     d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
                                 />
                             </svg>
-                            <span className="group-hover:text-gray-700 dark:group-hover:text-white">Se déconnecter</span>
+
                         </button>
                     </div>
                 </aside>
-                <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-                    <div className="sticky top-0 h-16 border-b bg-white dark:bg-gray-800 dark:border-gray-700 lg:py-2.5">
+                <div className="ml-auto mb-6 lg:w-[85%] xl:w-[90%] 2xl:w-[95%]">
+                    <div className="sticky top-0 h-16 border-b bg-lightblue dark:bg-gray-800 dark:border-gray-700 lg:py-2.5">
                         <div className="flex items-center justify-between space-x-4 px-6 2xl:container">
-                            <h5 hidden
-                                className="text-2xl font-medium text-gray-600 lg:block dark:text-white">Dashboard</h5>
+                            <div className={"flex gap-6"}>
+                                <span hidden
+                                    className="text-md  text-primary lg:block dark:text-white">Blog</span>
+                                <span hidden
+                                    className="text-md  text-primary lg:block dark:text-white">Webinaire</span>
+                                <span hidden
+                                    className="text-md  text-primary lg:block dark:text-white">Communauté</span>
+                            </div>
+
                             <button className="-mr-2 h-16 w-12 border-r lg:hidden dark:border-gray-700 dark:text-gray-300">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +92,7 @@ const DashboardLayout = ({ children }: LayoutProps) => {
                             <div className="flex space-x-4">
                                 {/*// <!--search bar -->*/}
                                 <div hidden className="md:block">
-                                    <div className="relative flex items-center text-gray-400 focus-within:text-cyan-400">
+                                    <div className="relative flex items-center text-gray-400 focus-within:text-orange">
                   <span
                       className="absolute left-4 flex h-6 items-center border-r border-gray-300 pr-3 dark:border-gray-700">
                     <svg
@@ -202,7 +112,7 @@ const DashboardLayout = ({ children }: LayoutProps) => {
                                             name="leadingIcon"
                                             id="leadingIcon"
                                             placeholder="Search here"
-                                            className="outline-none w-full rounded-xl border border-gray-300 py-2.5 pl-14 pr-4 text-sm text-gray-600 transition focus:border-cyan-300 dark:bg-gray-900 dark:border-gray-700"
+                                            className="outline-none w-full rounded-xl border border-gray-300 py-2.5 pl-14 pr-4 text-sm text-gray-600 transition focus:border-orange dark:bg-gray-900 dark:border-gray-700"
                                         />
                                     </div>
                                 </div>
@@ -223,39 +133,17 @@ const DashboardLayout = ({ children }: LayoutProps) => {
                                         ></path>
                                     </svg>
                                 </button>
-                                <button
-                                    aria-label="chat"
-                                    className="h-10 w-10 rounded-xl border bg-gray-100 active:bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:active:bg-gray-800"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="m-auto h-5 w-5 text-gray-600 dark:text-gray-300"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                                        />
-                                    </svg>
+                                <button>
+                                    <span className={"text-primary"}>
+                                        Abonnement
+                                    </span>
                                 </button>
                                 <button
                                     aria-label="notification"
-                                    className="h-10 w-10 rounded-xl border bg-gray-100 active:bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:active:bg-gray-800"
+                                    className="rounded-full text-white text-sm px-3 bg-purple"
                                 >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="m-auto h-5 w-5 text-gray-600 dark:text-gray-300"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
-                                        />
-                                    </svg>
+                                    15 jours gratuit
+
                                 </button>
                             </div>
                         </div>
@@ -263,7 +151,7 @@ const DashboardLayout = ({ children }: LayoutProps) => {
 
                     <div className="px-6 pt-6 2xl:container">
                         <div
-                            className="flex h-[80vh]  rounded-xl "
+                            className=" h-[80vh]  rounded-xl "
                         >
                             <main>{children}</main>
                         </div>
