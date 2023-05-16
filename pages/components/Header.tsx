@@ -99,7 +99,7 @@ export default function Header() {
                         <a
                             href="#"
                             className="relative flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                        ><Link href="/Dashboard/Profile">
+                        ><Link href="/dashboard/profile">
                     <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
                       Dashboard
                     </span>

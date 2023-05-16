@@ -44,7 +44,7 @@ const Register = () => {
 
 
                 // Redirect to homepage
-                window.location.href = '/Dashboard/Profile';
+                window.location.href = 'dashboard/Profile';
             }
         } catch (error) {
             console.error(error);
