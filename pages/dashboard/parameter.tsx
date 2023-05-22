@@ -33,33 +33,60 @@ const Parameter = () => {
             </section>
             <section className={"py-7"}>
                 <h5 className={"font-semibold text-primary text-xl"}>Paramètrez votre compte </h5>
-                <div >
-                    <form className={"bg-white grid gap-4 shadow shadow-xl shadow-circle/30  my-5 max-w-lg rounded-2xl p-4"}>
-                        <h6 className={"font-semibold text-primary text-xl"}>Modifier vos informations personnelles</h6>
-                        <div className={"grid gap-1.5"}>
-                            <div className={"flex justify-between gap-3"}>
-                                <div className={"grid gap-2 w-full"}>
-                                    <label className={"font-medium "}>Prénom</label>
-                                    <input name=" prenom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
+                <div className={"flex justify-around gap-12"}>
+                    <div className={"w-full"} >
+                        <form className={"bg-white grid gap-4 shadow shadow-xl shadow-circle/30 h-full my-5  rounded-2xl p-4"}>
+                            <h6 className={"font-semibold text-primary text-xl"}>Modifier vos informations personnelles</h6>
+                            <div className={"grid gap-1.5"}>
+                                <div className={"flex justify-between gap-3"}>
+                                    <div className={"grid gap-2 w-full"}>
+                                        <label className={"font-medium "}>Prénom</label>
+                                        <input name=" prenom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
+                                    </div>
+                                    <div className={"grid gap-2 w-full"}>
+                                        <label className={"font-medium "}>Nom</label>
+                                        <input name="nom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle py-2 rounded-lg p-1"}/>
+                                    </div>
                                 </div>
                                 <div className={"grid gap-2 w-full"}>
-                                    <label className={"font-medium "}>Nom</label>
-                                    <input name="nom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle py-2 rounded-lg p-1"}/>
+                                    <label className={"font-medium "}>E-mail</label>
+                                    <input name="email" type={"email"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
+                                </div>
+                                <div className={"grid gap-2 w-full"}>
+                                    <label className={"font-medium "}>Numéro de téléphone</label>
+                                    <input name="tel" type={"tel"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
                                 </div>
                             </div>
-                            <div className={"grid gap-2 w-full"}>
-                                <label className={"font-medium "}>E-mail</label>
-                                <input name="email" type={"email"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
-                            </div>
-                            <div className={"grid gap-2 w-full"}>
-                                <label className={"font-medium "}>Numéro de téléphone</label>
-                                <input name="tel" type={"tel"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
-                            </div>
-                        </div>
-                        <ButtonPrimary text={"Enregistrer les modifications"} className={`hover:bg-lightblue hover:text-gray-900 hover:shadow-none`}/>
+                            <ButtonPrimary text={"Enregistrer les modifications"} className={`hover:bg-lightblue hover:text-gray-900 hover:shadow-none`}/>
 
-                    </form>
+                        </form>
+                    </div>
+                    <div className={"w-full "}>
+                        <form className={"bg-white grid gap-4 shadow shadow-xl shadow-circle/30 h-full  my-5 rounded-2xl p-4"}>
+                            <h6 className={"font-semibold text-primary text-xl"}>Modifier vos informations personnelles</h6>
+                            <div className={"grid gap-1.5"}>
+
+                                    <div className={"grid gap-2 w-full"}>
+                                        <label className={"font-medium "}>Entrez votre mot de passe actuel</label>
+                                        <input name=" prenom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
+                                    </div>
+                                    <div className={"grid gap-2 w-full"}>
+                                        <label className={"font-medium "}>Entrez un nouveau mot de passe</label>
+                                        <input name="nom" type={"text"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle py-2 rounded-lg p-1"}/>
+                                    </div>
+
+                                <div className={"grid gap-2 w-full"}>
+                                    <label className={"font-medium "}>Confirmez le nouveau mot de passe</label>
+                                    <input name="email" type={"email"} className={"bg-grey focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-circle rounded-lg py-2 p-1"}/>
+                                </div>
+
+                            </div>
+                            <ButtonPrimary text={"Enregistrer le mot de passe"} className={`hover:bg-lightblue hover:text-gray-900 hover:shadow-none`}/>
+
+                        </form>
+                    </div>
                 </div>
+
             </section>
         </DashboardLayout>
     )
