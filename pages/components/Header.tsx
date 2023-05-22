@@ -101,7 +101,10 @@ export default function Header() {
                             className="relative flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                         ><Link href="/dashboard/profile">
                     <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
-                      Dashboard
+                      <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5.375C15 6.26502 14.7361 7.13504 14.2416 7.87507C13.7471 8.61509 13.0443 9.19186 12.2221 9.53246C11.3998 9.87305 10.495 9.96217 9.62209 9.78853C8.74918 9.6149 7.94736 9.18632 7.31802 8.55698C6.68868 7.92764 6.2601 7.12582 6.08647 6.25291C5.91283 5.37999 6.00195 4.47519 6.34254 3.65292C6.68314 2.83066 7.25991 2.12785 7.99993 1.63339C8.73996 1.13892 9.60998 0.875 10.5 0.875C11.6935 0.875 12.8381 1.34911 13.682 2.19302C14.5259 3.03693 15 4.18153 15 5.375ZM13.875 14.375H7.125C5.63316 14.375 4.20242 14.9676 3.14752 16.0225C2.09263 17.0774 1.5 18.5082 1.5 20V20C1.5 20.2984 1.61853 20.5845 1.82951 20.7955C2.04048 21.0065 2.32663 21.125 2.625 21.125H18.375C18.6734 21.125 18.9595 21.0065 19.1705 20.7955C19.3815 20.5845 19.5 20.2984 19.5 20C19.5 18.5082 18.9074 17.0774 17.8525 16.0225C16.7976 14.9676 15.3668 14.375 13.875 14.375Z" stroke="#100688" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
                     </span>
                         </Link>
                         </a>
