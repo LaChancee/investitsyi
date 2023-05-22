@@ -53,6 +53,7 @@ model Articles {
   title        String
   subTitle     String
   description  String
+  content      String
   category     String
   coverPicture String
   createdAt    DateTime @default(now()) @db.Timestamp(6)
