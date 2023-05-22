@@ -1,5 +1,6 @@
 import {ReactNode} from 'react';
 import user from "public/customers/client1.jpg"
+import logoV2 from "public/logoV2.png"
 import Image from "next/image";
 import {useSession} from "next-auth/react";
 import Link from "next/link";
@@ -22,7 +23,8 @@ const DashboardLayout = ({children}: LayoutProps) => {
                 <div className="py-4">
                     <Link href="/" title="home">
                                 <span className="text-base font-bold text-white dark:text-white">
-                        LOGO
+                            <Image src={logoV2} alt="logo investissy" />
+
                       </span>
                     </Link>
                 </div>
