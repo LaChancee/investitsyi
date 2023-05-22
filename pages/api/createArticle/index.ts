@@ -12,14 +12,16 @@ export default async function createArticle(req: NextApiRequest, res: NextApiRes
 
     try {
         // Extract the form data
-        const { title, description, category, content } = req.body;
+        const { title,subTitle,coverPicture, description, category, content } = req.body;
 
         // Create the article
         const article = await prisma.articles.create({
             data: {
                 title,
+                subTitle,
                 description,
                 category,
+                coverPicture,
                 content,
             },
         });
