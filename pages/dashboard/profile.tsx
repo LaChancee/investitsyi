@@ -64,7 +64,7 @@ const Profile = () => {
             </section>
             <section>
                 <Link href={"/dashboard/adminArticle"}>
-                    <ButtonPrimary text='Poster un article'/>
+                    <ButtonPrimary text='Poster un article' className={""}/>
                 </Link>
             </section>
         </DashboardLayout>
