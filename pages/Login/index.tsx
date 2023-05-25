@@ -11,7 +11,7 @@ import cardLogin from "public/card-login.png";
 import { signIn, signOut, useSession} from 'next-auth/react'
 import Link from "next/link";
 
-const Login = () => {
+const Index = () => {
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -44,7 +44,7 @@ const Login = () => {
 
 
                 // Redirect to homepage
-                window.location.href = '/dashboard/Profile';
+                window.location.href = '/dashboard/profile';
             }
         } catch (error) {
 
@@ -164,4 +164,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Index;
