@@ -55,7 +55,7 @@ const AdminArticle = () => {
                 // localStorage.setItem('token', data.token);
 
                 // Redirect to homepage
-                window.location.href = '/blog';
+                window.location.href = '/article';
             }
         } catch (error) {
             console.error(error);
