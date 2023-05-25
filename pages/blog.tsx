@@ -1,10 +1,56 @@
 import Layout from "./Layout";
 import Image from "next/image";
 import phone from "public/phoneBlog.png";
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {Articles} from "@prisma/client";
+import axios from "axios";
+import purple from "public/purpleBackground.png";
+import Link from "next/link";
+
+
 
 
 export default function Blog() {
+
+    const [articles, setArticles] = useState<Articles[]>([]);
+    function formatDate(dateISO: Date) {
+        const date = new Date(dateISO);
+        const day = String(date.getDate()).padStart(2, "0"); // Ajoute un zéro devant si le jour est inférieur à 10
+        const month = getMonthName(date.getMonth());
+        const year = date.getFullYear();
+
+        return `${day} ${month} ${year}`;
+    }
+
+    function getMonthName(month: number) {
+        const months = [
+            "janvier",
+            "février",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "août",
+            "septembre",
+            "octobre",
+            "novembre",
+            "décembre",
+        ];
+
+        return months[month];
+    }
+
+
+    useEffect(() => {
+            axios.get("http://localhost:3000/api/article/getArticles")
+                .then((response) => {
+                    setArticles(response.data);
+                })
+                .catch((error) => {
+                    console.error("Error fetching articles:", error);
+                });
+        }, []);
 
     return (
         <Layout>
@@ -55,7 +101,40 @@ export default function Blog() {
                     </li>
                 </ul>
             </section>
-            <section>
+            <section >
+                <div className={"px-20 py-5 grid  gap-4 grid-cols-3"}>
+                    {
+
+                        articles.map((article) =>(
+
+                            <Link
+
+                                href={{
+                                    pathname: '/article/[articleId]',
+                                    query: {
+                                        articleId: article.id,
+
+                                    }
+                                }}
+                                key={article.id} className={"grid gap-4 bg-white/50  rounded-2xl hover:bg-white shadow shadow-xl shadow-purple/30 p-4"}>
+                                <div className="w-full h-1/2 flex items-center">
+                                    <Image src={purple} alt="Violet Image" className="w-full h-full rounded-2xl object-cover" />
+                                </div>
+                                <div className={"-mt-48 grid gap-1"}>
+                                    <div className={"bg-purple/40 px-3 py-1 w-fit h-fit rounded-xl  mb-0"}>
+                                        <span>{article.category}</span>
+                                    </div>
+                                    <span className={"font-semibold"}>{article.title}</span>
+                                    <span>{article.description}</span>
+                                    <span className={"text-gray-400"}>{formatDate(article.createdAt)}</span>
+                                </div>
+
+
+                            </Link>
+
+                        ))
+                    }
+                </div>
 
             </section>
 
