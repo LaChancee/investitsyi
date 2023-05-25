@@ -13,13 +13,13 @@ export default function Footer() {
                     <h6 className="text-lg font-medium font-bold text-white">Investytsiyi.</h6>
                     <ul className="mt-4 list-inside space-y-4">
                         <li>
-                            <a href="#" className="transition text-white text-sm hover:text-orange">Accueil</a>
+                            <Link href="/" className="transition text-white text-sm hover:text-orange">Accueil</Link>
                         </li>
                         <li>
-                            <a href="#" className="transition text-white text-sm hover:text-orange">Fonctionnement</a>
+                            <Link href="/Fonctionnement" className="transition text-white text-sm hover:text-orange">Fonctionnement</Link>
                         </li>
                         <li>
-                            <a href="#" className="transition text-white text-sm hover:text-orange">Contact</a>
+                            <Link href="/contact" className="transition text-white text-sm hover:text-orange">Contact</Link>
                         </li>
                     </ul>
                 </div>
@@ -28,7 +28,7 @@ export default function Footer() {
                     <h6 className="text-lg font-medium font-bold text-white">Accès membre.</h6>
                     <ul className="mt-4 list-inside space-y-4">
                         <li>
-                            <a href="#" className="transition text-white text-sm  hover:text-orange">Se connecter</a>
+                            <Link href="/Login" className="transition text-white text-sm  hover:text-orange">Se connecter</Link>
                         </li>
                         <li>
                             <a href="#" className="transition text-white text-sm hover:text-orange">Créer un compte</a>
@@ -44,7 +44,7 @@ export default function Footer() {
                     <h6 className="text-lg font-medium font-bold text-white">Légal.</h6>
                     <ul className="mt-4 list-inside space-y-4">
                         <li>
-                            <a href="#" className="transition text-white text-sm  hover:text-orange">Mentions légales</a>
+                            <Link href="/mentions" className="transition text-white text-sm  hover:text-orange">Mentions légales</Link>
                         </li>
                         <li>
                             <a href="#" className="transition text-white text-sm  hover:text-orange">Politique de confidentialité</a>
