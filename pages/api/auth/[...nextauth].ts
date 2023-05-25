@@ -1,8 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth, {NextAuthOptions, User} from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import {prisma, PrismaClient} from '@prisma/client';
+
 
 const options: NextAuthOptions = {
 
