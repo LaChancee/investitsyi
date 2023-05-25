@@ -1,11 +1,9 @@
 import {useRouter} from "next/router";
 import Link from "next/link";
 import React, {useEffect, useState} from "react";
-import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import axios from "axios";
 import {Articles} from "@prisma/client";
-import Parser from 'html-react-parser';
 import Layout from "../Layout";
 
 
@@ -84,7 +82,7 @@ const Article = () => {
                     Working process
                   </span>
                                 </div>
-                                <div className="text-lg text-gray-800 dark:text-gray-200" >{Parser(article.content)}</div>
+                                <div className="text-lg text-gray-800 dark:text-gray-200" >{article.content}</div>
                                 <div className="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
 
                                     <div className="flex justify-end items-center gap-x-1.5">
