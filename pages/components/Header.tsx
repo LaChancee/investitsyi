@@ -131,7 +131,7 @@ export default function Header() {
                         </Link>
                         </a>
                         <Link
-                            href="/Login"
+                            href="/login"
                             className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                         >
 

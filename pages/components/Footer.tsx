@@ -28,7 +28,7 @@ export default function Footer() {
                     <h6 className="text-lg font-medium font-bold text-white">Accès membre.</h6>
                     <ul className="mt-4 list-inside space-y-4">
                         <li>
-                            <Link href="/Login" className="transition text-white text-sm  hover:text-orange">Se connecter</Link>
+                            <Link href="/login" className="transition text-white text-sm  hover:text-orange">Se connecter</Link>
                         </li>
                         <li>
                             <a href="#" className="transition text-white text-sm hover:text-orange">Créer un compte</a>
