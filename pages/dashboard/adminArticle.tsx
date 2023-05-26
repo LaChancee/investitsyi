@@ -2,6 +2,7 @@ import DashboardLayout from "./DashboardLayout";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import dynamic from "next/dynamic";
 import 'react-quill/dist/quill.snow.css';
+import axios from "axios";
 
 const QuillNoSSRWrapper = dynamic(import('react-quill'), {
     ssr: false,
@@ -41,22 +42,12 @@ const AdminArticle = () => {
     const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            const response = await fetch('/api/createArticle', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            const data = await response.json();
-            console.log(data);
-            if (response.ok) {
-                // Store JWT token in local storage
-                // localStorage.setItem('token', data.token);
+            const response = await axios.post('/api/createArticle', formData);
+            console.log(response.data);
 
                 // Redirect to homepage
-                window.location.href = '/article';
-            }
+                window.location.href = '/blog';
+
         } catch (error) {
             console.error(error);
         }
@@ -119,7 +110,7 @@ const AdminArticle = () => {
                                         onChange={handleSelectChange}
                                         className="bg-gray-50 w-full border border-grey text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     >
-                                        <option disabled selected>Choisissez une categorie</option>
+                                        <option disabled defaultValue={"Choisissez une catégorie"}>Choisissez une categorie</option>
                                         <option>Nft</option>
                                         <option>Immobilier</option>
                                         <option>Start-up</option>
