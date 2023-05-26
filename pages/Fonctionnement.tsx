@@ -138,7 +138,7 @@ export default function Fonctionnement() {
                                         Créer un compte
 
                                     </Link>
-                                    <a href="/Contact"
+                                    <a href="/contact"
                                        className=" w-fit  rounded-full border transition hover:bg-primary hover:text-white   border-primary text-primary border-2  mt-5 px-6 py-2 ">
                                         Nous contacter
                                     </a>
