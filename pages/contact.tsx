@@ -29,7 +29,7 @@ export default function Contact(){
 
                 </div>
             </section>
-            <section className={"p-20 grid gap-6"}>
+            <section className={"p-20 z-10 relative grid gap-6"}>
                 <h1 className={"block text-xl font-bold text-gray-800 sm:text-2xl dark:text-white"}>Bonjour! En quoi pouvons-nous vous aider aujourd'hui?</h1>
                 <div className={"grid place-content-stretch gap-4 w-full h-full rounded-xl p-0.5 bg-gradient-to-r from-transparent to-white"}>
                     <div className={"grid rounded-xl p-6 h-full w-full bg-cardTransparent "}>
