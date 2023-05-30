@@ -43,7 +43,7 @@ export default function Blog() {
 
 
     useEffect(() => {
-            axios.get("https://investissy.vercel.app/api/article/getArticles")
+            axios.get("https://investitsyi-production.up.railway.app/api/article/getArticles")
                 .then((response) => {
                     setArticles(response.data);
                 })
