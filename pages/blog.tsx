@@ -43,7 +43,7 @@ export default function Blog() {
 
 
     useEffect(() => {
-            axios.get("http://localhost:3000/api/article/getArticles")
+            axios.get("https://investissy.vercel.app/api/article/getArticles")
                 .then((response) => {
                     setArticles(response.data);
                 })
@@ -82,7 +82,7 @@ export default function Blog() {
 
                 </div>
             </section>
-            <section className={"py-6 grid content-center px-24"}>
+            <section className={"py-6 grid content-center relative z-10 px-24"}>
                 <ul className={"w-fit place-self-center grid grid-cols-5 gap-5"}>
                     <li className={"bg-white text-center text-primary text-xl px-4 py-3 rounded-xl shadow shadow-xl shadow-circle/30 hover:bg-grey "}>
                         #Finances
@@ -101,7 +101,7 @@ export default function Blog() {
                     </li>
                 </ul>
             </section>
-            <section >
+            <section className={"relative z-10 "}>
                 <div className={"px-20 py-5 grid  gap-4 grid-cols-3"}>
                     {
 
