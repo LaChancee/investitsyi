@@ -20,6 +20,7 @@ export default function Header() {
           hidden
           aria-hidden="true"
         />  {/* shadow ici*/}
+
         <nav className="fixed z-20  bg-white w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar shadow-md shadow-gray-600/5 peer-checked:navbar-active md:relative  dark:shadow-none">
           <div className="xl:container m-auto px-6 md:px-12">
             <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0">
@@ -42,7 +43,7 @@ export default function Header() {
                 </label>
               </div>
               <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
-                <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
+                <div className="text-gray-600 dark:text-gray-300 lg:pr-4" >
                   <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
                     <li>
                       <Link
