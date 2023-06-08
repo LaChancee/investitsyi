@@ -1,4 +1,4 @@
-// api/createArticle.ts
+// api/article/createArticle.ts
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import { PrismaClient } from '@prisma/client';
@@ -11,10 +11,10 @@ export default async function createArticle(req: NextApiRequest, res: NextApiRes
     }
 
     try {
-        // Extract the form data
+        // Extrait de la donnée
         const { title,subTitle,coverPicture, description, category, content } = req.body;
 
-        // Create the article
+        // Creation de l'article
         const article = await prisma.articles.create({
             data: {
                 title,
