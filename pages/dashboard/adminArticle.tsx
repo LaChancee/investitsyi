@@ -42,7 +42,7 @@ const AdminArticle = () => {
     const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            const response = await axios.post('/api/createArticle', formData);
+            const response = await axios.post('/api/article/createArticle', formData);
             console.log(response.data);
 
                 // Redirect to homepage
