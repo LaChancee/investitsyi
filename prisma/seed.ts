@@ -15,18 +15,6 @@ async function main() {
     town: faker.address.cityName(),
     subtype: true,
     usertype: faker.name.jobTitle(),
-    // posts: {
-    //         create: {
-    //             title: 'Investissez à fond',
-    //             content: faker.lorem.sentences(),
-    //             published: true,
-    //         },
-    // },
-    // Profile: {
-    //     create: {
-    //         bio : faker.lorem.sentences(),
-    //     }
-    // }    
   }]
   await Promise.all(
     users.map(async (user) => {
