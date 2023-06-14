@@ -123,7 +123,7 @@ export default function Header() {
                   ) :(
                       <div className="w-full w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0  lg:border-l">
                         <Link
-                            href="/Register"
+                            href="/register"
                             className="relative flex h-9 items-center justify-center sm:mx-2 before:absolute before:inset-0 before:rounded-full focus:before:bg-primary/10 dark:focus:before:bg-primaryLight/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                         >
                     <span className="relative text-sm font-semibold text-primary hover:text-blue-600 dark:text-primaryLight hover:text-blue-700">
