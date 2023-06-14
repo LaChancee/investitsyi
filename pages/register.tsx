@@ -8,9 +8,10 @@ import twitter from "public/twitter-logo.png";
 import facebook from "public/logo-facebook.svg";
 
 import { signIn, signOut, useSession} from 'next-auth/react'
-import {router} from "next/client";
+import { useRouter } from 'next/router';
 
 const Register = () => {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         email: "",
         first_name: "",
@@ -46,7 +47,7 @@ const Register = () => {
 
 
                 // Redirect to homepage
-                router.push("/dashboard/profile");
+                await router.push("/dashboard/profile");
             }
         } catch (error) {
             console.error(error);

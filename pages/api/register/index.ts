@@ -20,11 +20,8 @@ export default async function createUser(req: NextApiRequest, res: NextApiRespon
 
             },
         });
-
-
         // Générer un token JWT
         const token = jwt.sign({ userId: user.id }, "secretKey", { expiresIn: '1h' });
-
 
         // Envoyer la réponse avec le token JWT
         return res.status(200).json({ token });
