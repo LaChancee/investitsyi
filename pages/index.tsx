@@ -42,6 +42,9 @@ const App: React.FC = () => {
                     </div>
                 </section>
 
+
+
+
                 <section className="bg-white ">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
@@ -72,6 +75,80 @@ const App: React.FC = () => {
                     </div>
                 </section>
 
+                <section>
+                    <div className="grid justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                        <div className="max-w-screen-md lg:mb-12">
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">
+                                Comment investir avec
+                                <span className="text-transparent bg-gradient-to-r bg-clip-text from-primary to-orange">
+          Investissy
+        </span>
+                            </h2>
+                        </div>
+                        {/* Steps*/}
+                        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-2 gap-4 max-w-screen relative z-10">
+                            <div className="grid gap-2 max-w-sm">
+                                <div className="grid place-items-center">
+                                    <Image src={wallet} alt="wallet-crypto" width={155} height={167} className="mb-9 place-item-center" />
+                                </div>
+                                <div className="grid place-content-center">
+                                    <h2 className="grid w-fit place-content-center font-semibold text-lg py-3 px-6 bg-grey rounded-full">
+                                        Étape 1
+                                    </h2>
+                                </div>
+                                <h2 className="text-xl font-semibold text-center">Évaluer votre profil d'investisseur</h2>
+                                <p className="max-w-sm text-center">
+                                    Commencez par évaluer votre profil d'investisseur pour déterminer votre tolérance au risque et vos objectifs financiers.
+                                </p>
+                            </div>
+
+                            <div className="grid gap-2 max-w-sm">
+                                <div className="grid place-items-center">
+                                    <Image src={creditCard} alt="wallet-crypto" width={155} height={167} className="mb-9 place-item-center" />
+                                </div>
+                                <div className="grid place-content-center">
+                                    <h2 className="grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full">
+                                        Étape 2
+                                    </h2>
+                                </div>
+                                <h2 className="text-xl font-semibold text-center">Étudier les options d'investissement</h2>
+                                <p className="max-w-sm text-center">
+                                    Étudiez attentivement les options d'investissement dans l'immobilier, la crypto et les NFT pour choisir les investissements les plus adaptés.
+                                </p>
+                            </div>
+
+                            <div className="grid gap-2 max-w-sm">
+                                <div className="grid place-items-center">
+                                    <Image src={balance} alt="wallet-crypto" width={155} height={167} className="mb-9 place-item-center" />
+                                </div>
+                                <div className="grid place-content-center">
+                                    <h2 className="grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full">
+                                        Étape 3
+                                    </h2>
+                                </div>
+                                <h2 className="text-xl font-semibold text-center">Planifier et gérer votre portefeuille</h2>
+                                <p className="max-w-sm text-center">
+                                    Planifiez et gérez votre portefeuille d'investissement en utilisant les outils et les ressources disponibles pour maximiser votre rendement.
+                                </p>
+                            </div>
+                            <div className="grid gap-2 max-w-sm">
+                                <div className="grid place-items-center">
+                                    <Image src={dollar} alt="wallet-crypto" width={155} height={167} className="mb-9 place-item-center" />
+                                </div>
+                                <div className="grid place-content-center">
+                                    <h2 className="grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full">
+                                        Étape 4
+                                    </h2>
+                                </div>
+                                <h2 className="text-xl font-semibold text-center">Surveiller et ajuster vos investissements</h2>
+                                <p className="max-w-sm text-center">
+                                    Surveillez régulièrement vos investissements et ajustez votre portefeuille en fonction des changements de marché.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="absolute -inset-y-26 -left-52 z-0 w-1/3 h-1/3 bg-orange/30 rounded-full filter blur-3xl"></div>
+                    </div>
+                </section>
                  
                 <section>
                     <div
@@ -91,7 +168,7 @@ const App: React.FC = () => {
                             engagement chez Investissy.
                         </p>
                     </div>
-                    <div className={"grid grid-cols-2 grid-flow-dense relative z-10"}>
+                    <div className={"grid grid-cols-1 sm:grid-cols-2 grid-flow-dense relative z-10"}>
                         <div className={"grid"}>
                             <Image src={cardDeco} alt={"Cards and decoration"}/>
                         </div>
@@ -340,13 +417,13 @@ const App: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className={"flex items-center md:flex-cols-3 relative z-10"}>
+                    <div className={"flex items-center  md:flex-cols-3 relative z-10"}>
                         <div className={"flex-none bg-grey-100 px-4"}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={"self-center"} height="48" width="48">
                                 <path d="M20 44 0 24 20 4l2.8 2.85L5.65 24 22.8 41.15Z"/>
                             </svg>
                         </div>
-                        <div className={"grid grid-cols-4 gap-6 col-span-2 place-items-center "}>
+                        <div className={"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 col-span-2 place-items-center "}>
                             <div
                                 className={"grid place-items-center rounded-xl w-full h-full shadow-lightblue/30 shadow-xl gap-5 p-5 bg-lightblue"}>
                                 <div className={"relative h-3 w-24 inline-block"}>

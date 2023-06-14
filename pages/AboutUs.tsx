@@ -87,7 +87,7 @@ export default function AboutUs() {
                             en ligne préférée des investisseurs
                         </p>
                     </div>
-                    <div className={"grid grid-cols-4 gap-6 px-8"}>
+                    <div className={"grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4  gap-6 px-8"}>
                         <div className={"grid place-content-stretch gap-4 w-full h-full rounded-xl p-0.5 bg-gradient-to-r from-transparent to-white"}>
                             <div className={"grid rounded-xl p-1 h-full w-full bg-cardTransparent "}>
                                 <h4 className={"text-6xl  p-3 place-self-center font-bold"}>
