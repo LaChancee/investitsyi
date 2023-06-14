@@ -10,10 +10,10 @@ export default async function getArticles(req: NextApiRequest, res: NextApiRespo
         if (articles.length > 0) {
             res.status(201).json( articles); // Convertir en type Articles[]
         } else {
-            return undefined;
+            return res.status(404);
         }
     } catch (err) {
         console.log(err);
-        return undefined;
+        return res.status(500);
     }
 }
