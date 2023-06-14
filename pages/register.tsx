@@ -41,7 +41,7 @@ const Register = () => {
             console.log(data);
             if (response.ok) {
                 // Store JWT token in local storage
-                localStorage.setItem('token', data.token);
+
 
                 await signIn('credentials', {
                     email: formData.email,

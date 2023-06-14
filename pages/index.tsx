@@ -20,13 +20,13 @@ const App: React.FC = () => {
 
                     <div className="grid relative z-10 max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div className="mr-auto place-self-center lg:col-span-7">
-                            <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-loose md:text-5xl xl:text-7xl dark:text-white">
+                            <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-loose md:text-5xl xl:text-7xl ">
                                 Votre guide pour des investissements réussis
                             </h1>
-                            <p className="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                            <p className="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
                                 Découvrez les tendances du marché, apprenez les astuces des investisseurs les plus prospères et investissez en toute confiance avec notre plateforme.
                             </p>
-                            <Link href="/AboutUs" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                            <Link href="/AboutUs" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30 focus:ring-4 focus:ring-blue-300 ">
                                 Découvrir
                                 <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -42,7 +42,7 @@ const App: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="bg-white dark:bg-gray-900">
+                <section className="bg-white ">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
                             <div className="relative pl-4 md:pl-16">
@@ -133,7 +133,7 @@ const App: React.FC = () => {
                     <div
                         className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="  lg:mb-12">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 ">Commencez
                                 l’aventure avec Investissy </h2>
                         </div>
                         <p className={'text-center text-lg max-w-5xl'}>
@@ -145,17 +145,17 @@ const App: React.FC = () => {
                     <div className="space-y-8 px-14 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                         {/*// <!-- Pricing Card -->*/}
                         <div
-                            className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-xl border border-2 border-circle/30  transition hover:shadow-xl hover:shadow-circle/30 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                            className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-xl border border-2 border-circle/30  transition hover:shadow-xl hover:shadow-circle/30  xl:p-8">
                             <h3 className=" text-4xl font-semibold">Intro</h3>
                             <div className="flex justify-center items-baseline my-4">
                                 <span className="mr-2 text-xl text-purple font-semibold">Gratuit</span>
                             </div>
-                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Illimité</p>
+                            <p className="font-light mb-4 text-gray-500 sm:text-lg ">Illimité</p>
                             {/*// <!-- List -->*/}
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -166,7 +166,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500"
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -176,7 +176,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -186,7 +186,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -196,7 +196,7 @@ const App: React.FC = () => {
                                 </li>
                             </ul>
                             <Link href="/Register"
-                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center ">S'inscrire
                                 pour la version d'essai</Link>
                             <Link href={'/Pricing'}
                                   className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les
@@ -204,20 +204,20 @@ const App: React.FC = () => {
                         </div>
                         {/*// <!-- Pricing Card -->*/}
                         <div
-                            className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-xl border-2 border-circle/30 hover:shadow-lg hover:shadow-circle/30 dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                            className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-xl border-2 border-circle/30 hover:shadow-lg hover:shadow-circle/30  xl:p-8 ">
                             <h3 className="text-4xl font-semibold">Base</h3>
                             <div className="flex justify-center items-baseline my-4">
                                 <span className="mr-2  text-xl text-primary font-semibold">€15 / mois</span>
 
                             </div>
-                            <p className="font-light mb-4 text-gray-500 sm:text-lg dark:text-gray-400">Ou facturé
+                            <p className="font-light mb-4 text-gray-500 sm:text-lg ">Ou facturé
                                 annuellement</p>
 
                             {/*// <!-- List -->*/}
                             <ul role="list" className="mb-8 space-y-4 text-left">
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -227,7 +227,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -237,7 +237,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -247,7 +247,7 @@ const App: React.FC = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     {/*// <!-- Icon -->*/}
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 "
                                          fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -257,7 +257,7 @@ const App: React.FC = () => {
                                 </li>
                             </ul>
                             <Link href="/Register"
-                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">S'inscrire
+                                  className="text-grey-100 bg-lightblue py-4 transition hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center ">S'inscrire
                                 pour la version d'essai</Link>
                             <Link href={'/Pricing'}
                                   className={"text-primary my-4 hover:underline hover:underline-offset-2"}> Voir les
