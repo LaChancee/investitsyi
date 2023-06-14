@@ -1,4 +1,4 @@
-import React, {FormEvent, useState} from "react";
+import React, {FormEvent, useEffect, useState} from "react";
 
 import loader from "public/loader.svg"
 import Image from "next/image";
@@ -8,6 +8,7 @@ import twitter from "public/twitter-logo.png";
 import facebook from "public/logo-facebook.svg";
 
 import { signIn, signOut, useSession} from 'next-auth/react'
+import {router} from "next/client";
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -42,34 +43,23 @@ const Register = () => {
                 // Store JWT token in local storage
                 localStorage.setItem('token', data.token);
 
+                await signIn('credentials', {
+                    email: formData.email,
+                    password: formData.password,
+                    redirect: false, // Avoid redirecting since we'll manually redirect later,
+                    secret: data.token,
+                });
+
 
                 // Redirect to homepage
-                window.location.href = 'dashboard/Profile';
+                router.push("/dashboard/profile");
             }
         } catch (error) {
             console.error(error);
         }
     };
 
-// // Check if user is logged in
-//     const token = localStorage.getItem('token');
-//     if (token) {
-//         try {
-//             const decodedToken = jwt_decode(token);
-//             // User is logged in
-//         } catch (error) {
-//             console.error(error);
-//             // Invalid token, redirect to login page
-//             window.location.href = '/login';
-//         }
-//     } else {
-//         // User is not logged in, redirect to login page
-//         window.location.href = '/';
-//     }
     const { data: session, status } = useSession()
-
-
-
 
     return (
 
@@ -168,9 +158,9 @@ const Register = () => {
                                        placeholder="" required={true}/>
                             </div>
                             <div>
-                                <label htmlFor="password"
+                                <label htmlFor="ConfirmPassword"
                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirmation de mot de passe</label>
-                                <input type="password" name="password" id="password"
+                                <input type="password" name="ConfirmPassword" id="ConfirmPassword"
                                        className="bg-gray-50 w-full border border-grey text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                        placeholder="" required={true}/>
                             </div>
