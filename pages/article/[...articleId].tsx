@@ -5,12 +5,15 @@ import Image from "next/image";
 import axios from "axios";
 import {Articles} from "@prisma/client";
 import Layout from "../Layout";
+import kilian from "public/Kilian.png";
+import parse from 'html-react-parser';
 
 
 
 
 
 const Article = () => {
+    const parse = require('html-react-parser');
     const router = useRouter();
     const { articleId } = router.query;
     const [article, setArticle] = useState<Articles>();
@@ -82,7 +85,7 @@ const Article = () => {
                     Working process
                   </span>
                                 </div>
-                                <div className="text-lg text-gray-800 dark:text-gray-200" >{article.content}</div>
+                                <div className="text-lg text-gray-800 dark:text-gray-200" >{ parse(article.content)}</div>
                                 <div className="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
 
                                     <div className="flex justify-end items-center gap-x-1.5">
@@ -166,14 +169,14 @@ const Article = () => {
                             {/* Avatar Media */}
                             <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-gray-700">
                                 <a className="block flex-shrink-0" href="#">
-                                    <Image className="h-10 w-10 rounded-full" width={200} height={200} src={"https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"} alt={"Image Description"} />
+                                    <Image className="h-10 w-10 rounded-full" width={200} height={200} src={kilian} alt={"Image Description"} />
                                 </a>
                                 <a className="group grow block" >
                                     <h5 className="group-hover:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                                        Leyla Ludic
+                                        Kilian Le Balch
                                     </h5>
                                     <p className="text-sm text-gray-500">
-                                        UI/UX enthusiast
+                                        Expert Marketing
                                     </p>
                                 </a>
                                 <div className="grow">
@@ -194,7 +197,7 @@ const Article = () => {
                                 <a className="group flex items-center gap-x-6" href="#">
                                     <div className="grow">
                     <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                      5 Reasons to Not start a UX Designer Career in 2022/2023
+                      Les tendances de l'investissement immobilier en 2023 : Ce que vous devez savoir
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
@@ -206,7 +209,7 @@ const Article = () => {
                                 <a className="group flex items-center gap-x-6" href="#">
                                     <div className="grow">
                     <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                      If your UX Portfolio has this 20% Well Done, it Will Give You an 80% Result
+                      Guide du débutant pour investir dans les crypto-monnaies : Comment commencer en toute confiance
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
@@ -218,7 +221,7 @@ const Article = () => {
                                 <a className="group flex items-center gap-x-6" href="#">
                                     <div className="grow">
                     <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-gray-200 dark:group-hover:text-blue-500">
-                      7 Principles of Icon Design
+                      Découvrez l'avenir des NFT : Comment investir dans les œuvres d'art numériques
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
