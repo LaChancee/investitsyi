@@ -41,7 +41,7 @@ export default function AboutUs() {
                                 Notre histoire
                             </h2>
                             <p className={"max-w-xl md:text-lg lg:text-xl text-center"}>
-                                Découvrez comment Investytsiyi est devenu un leader de
+                                Découvrez comment Investissy est devenu un leader de
                                 l'investissement en ligne
                             </p>
                         </div>
@@ -49,7 +49,7 @@ export default function AboutUs() {
                             <Image src={pinkCreditCard} alt={"Boy on his phone"} className={"mt-6 h-full"} />
                             <div className={"self-center md:text-lg lg:text-xl "}>
                                 <p className={"pb-5"}>
-                                    Chez Investytsiyi, nous avons une histoire riche qui remonte à nos débuts.
+                                    Chez Investissy, nous avons une histoire riche qui remonte à nos débuts.
                                     Nous avons commencé comme une petite start-up qui cherchait à démocratiser l'investissement en ligne,
                                     offrant des outils et des ressources innovants aux investisseurs débutants.</p>
 
@@ -80,10 +80,10 @@ export default function AboutUs() {
                 <section className={"px-32 py-6"}>
                     <div className={"grid relative z-10 justify-items-center  px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="max-w-screen-md  lg:mb-16">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Quelques chiffres sur Investytsiyi </h2>
+                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Quelques chiffres sur Investissy </h2>
                         </div>
                         <p className={'text-center text-lg max-w-xl'}>
-                            Découvrez pourquoi Investytsiyi est la plateforme d'investissement
+                            Découvrez pourquoi Investissy est la plateforme d'investissement
                             en ligne préférée des investisseurs
                         </p>
                     </div>
@@ -148,7 +148,7 @@ export default function AboutUs() {
                             <div className={"flex items-center row-auto  inline-block gap-6"}>
                                 <div className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-3xl "}></div>
                                 <p className={"max-w-xl: ml-2 p-9  -mr-6 text-justify inline-block"}>
-                                    Chez Investytsiyi, notre mission est d'aider les gens à prendre le contrôle de leur avenir financier
+                                    Chez Investissy, notre mission est d'aider les gens à prendre le contrôle de leur avenir financier
                                     en
                                     leur fournissant les connaissances et les outils dont ils ont besoin pour réussir dans l'investissement.
                                 </p>
@@ -181,7 +181,7 @@ export default function AboutUs() {
                                 Notre équipe
                             </h2>
                             <p className={"max-w-xl md:text-lg lg:text-xl text-center"}>
-                                Les personnes qui rendent Investytsiyi possible
+                                Les personnes qui rendent Investissy possible
                             </p>
                             <div className={"self-center gap-6 max-w-lg md:text-lg lg:text-xl "}>
                             <p className={"pb-5 text-center"}>
@@ -195,7 +195,7 @@ export default function AboutUs() {
                                 de partager nos connaissances avec les autres.
                             </p>
                             <p className={"pb-5 text-center"}>
-                                Chez Investytsiyi, nous sommes fiers de la culture que nous avons créée et de
+                                Chez Investissy, nous sommes fiers de la culture que nous avons créée et de
                                 l'impact que nous avons sur la vie de nos utilisateurs.
                             </p>
                         </div>

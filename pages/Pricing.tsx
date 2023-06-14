@@ -37,7 +37,7 @@ export default function Pricing(){
                 {/* Partie orange */}
                 <div className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                     <div className="  lg:mb-12">
-                        <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez l’aventure avec Investytsiyi  </h2>
+                        <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez l’aventure avec Investissy  </h2>
                     </div>
                     <p className={'text-center text-lg max-w-5xl'}>
                         Nous sommes fiers de proposer des frais compétitifs, afin que vous puissiez maximiser vos rendements
@@ -373,7 +373,7 @@ export default function Pricing(){
                             <h3 className={"text-4xl w-fit font-bold"}>Accompagnement Premium En Ligne</h3>
                             <div className={" grid gap-5"}>
                                 <p className={"text-lg"}>
-                                    Chez Investytsiyi, nous croyons que le partage de connaissances et d'expériences est essentiel pour réussir dans l'investissement. C'est
+                                    Chez Investissy, nous croyons que le partage de connaissances et d'expériences est essentiel pour réussir dans l'investissement. C'est
                                     pourquoi nous avons créé une communauté active où les investisseurs
                                     peuvent se connecter, partager des connaissances, des stratégies,
                                     et des astuces pour réussir.</p>

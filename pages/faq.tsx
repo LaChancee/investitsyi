@@ -48,7 +48,7 @@ const Faq = ()=> {
                             </div>
                         </div>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
                             </div>
@@ -79,7 +79,7 @@ const Faq = ()=> {
                             </div>
                         </div>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
                             </div>
@@ -110,7 +110,7 @@ const Faq = ()=> {
                             </div>
                         </div>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
                             </div>
@@ -140,7 +140,7 @@ const Faq = ()=> {
                             </div>
                         </div>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
                             </div>
@@ -170,7 +170,7 @@ const Faq = ()=> {
                             </div>
                         </div>
                         <div className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
-                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investytsiyi en cas de problème ?</p>
+                            <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24" width="24"><path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
                             </div>

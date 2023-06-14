@@ -15,201 +15,64 @@ const App: React.FC = () => {
         <Layout>
             <main className={"p-12 bg-white relative overflow-hidden"}>
                 <GoogleFonts href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"/>
-                <section className=" dark:bg-gray-900 relative">
-                    <div
-                        className={"absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full  bg-circle/30 rounded-full filter blur-3xl "}></div>
+                <section className="dark:bg-gray-900 relative">
+                    <div className="absolute -left-48 z-0 -top-48 z-0 w-1/2 h-full bg-circle/30 rounded-full filter blur-3xl"></div>
 
-                    <div
-                        className="grid relative z-10 max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                    <div className="grid relative z-10 max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div className="mr-auto place-self-center lg:col-span-7">
-                            <h1 className="max-w-2xl mb-4 text-4xl font-bold
-                    tracking-tight leading-loose md:text-5xl
-                    xl:text-7xl dark:text-white">
+                            <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-loose md:text-5xl xl:text-7xl dark:text-white">
                                 Votre guide pour des investissements réussis
                             </h1>
-                            <p className="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Découvrez
-                                les tendances du marché, apprenez les astuces des investisseurs les plus prospères et
-                                investissez en toute confiance avec notre plateforme.
+                            <p className="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                                Découvrez les tendances du marché, apprenez les astuces des investisseurs les plus prospères et investissez en toute confiance avec notre plateforme.
                             </p>
-                            <Link href="/AboutUs"
-                                  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                                Nous découvrir dès maintenant
-                                <svg className="w-5 h-5 ml-2 -mr-1 " fill="currentColor" viewBox="0 0 20 20"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"></path>
+                            <Link href="/AboutUs" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary transition duration-300 hover:shadow-xl hover:shadow-primary/30 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                                Découvrir
+                                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
                             </Link>
-                            <a href="#"
-                               className="inline-flex items-center transition justify-center px-5 py-3 text-base font-medium text-center text-primary underline underline-offset-4  rounded-lg hover:decoration-2 focus:ring-4 focus:ring-gray-100 ">
+                            <a href="#" className="inline-flex items-center transition justify-center px-5 py-3 text-base font-medium text-center text-primary underline underline-offset-4 rounded-lg hover:decoration-2 focus:ring-4 focus:ring-gray-100">
                                 Comment ça marche ?
                             </a>
                         </div>
-                        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                            <Image src={landingPage} alt={"Image décorative"}/>
+                        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+                            <Image src={landingPage} alt="Image décorative" />
                         </div>
                     </div>
                 </section>
 
-                <section className="bg-white dark:bg-gray-900  ">
+                <section className="bg-white dark:bg-gray-900">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                        <div
-                            className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
-                            <div className="relative pl-16">
-                                <dt className=" font-semibold leading-7 text-black">
-                                    <div
-                                        className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
-                                        <svg className="w-5 h-5 text-black"
-                                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                  d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-                                                  clip-rule="evenodd"></path>
+                        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 relative z-10">
+                            <div className="relative pl-4 md:pl-16">
+                                <dt className="font-semibold leading-7 text-black">
+                                    <div className="absolute top-0 left-0 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full shadow-xl">
+                                        <svg className="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                                         </svg>
                                     </div>
-                                    Investir dans l'avenir,
-                                    c'est maintenant
+                                    Investir dans l'avenir, c'est maintenant
                                 </dt>
-                                <dd className="mt-2  leading-7 text-gray-900">Découvrez comment investir dans
-                                    l'immobilier, la crypto et les NFT avec notre plateforme éducative.
-                                </dd>
+                                <dd className="mt-2 leading-7 text-gray-900">Découvrez comment investir dans l'immobilier, la crypto et les NFT avec notre plateforme éducative.</dd>
                             </div>
 
-                            <div className="relative pl-16">
+                            <div className="relative pl-4 md:pl-16">
                                 <dt className="text-base font-semibold leading-7 text-black">
-                                    <div
-                                        className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full shadow-xl ">
-                                        <svg className="w-5 h-5 text-black"
-                                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                                    <div className="absolute top-0 left-0 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full shadow-xl">
+                                        <svg className="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
                                         </svg>
                                     </div>
-                                    Des investissements
-                                    réussis à portée de main
+                                    Des investissements réussis à portée de main
                                 </dt>
-                                <dd className="mt-2 text-base leading-7 text-gray-600">Rejoignez la communauté
-                                    Investytsiyi et apprenez
-                                    à investir comme un pro pour préparer votre
-                                    avenir financier.
-                                </dd>
+                                <dd className="mt-2 text-base leading-7 text-gray-600">Rejoignez la communauté Investissy et apprenez à investir comme un pro pour préparer votre avenir financier.</dd>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div className="grid justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                        <div className="max-w-screen-md  lg:mb-12">
-                            <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Comment
-                                investir avec <span
-                                    className={"text-transparent bg-gradient-to-r bg-clip-text from-primary to-orange"}>
-                        Investytsiyi
-                    </span></h2>
-                        </div>
-                        {/* Steps*/}
-                        <div
-                            className={"grid grid-cols-4 gap-4 xs:grid-cols-1 max-lg:grid-cols-2 max-w-screen relative z-10"}>
-                            <div className={"grid gap-2 max-w-sm "}>
-                                <div className={"grid place-items-center"}>
-                                    <Image src={wallet} alt={"wallet-crypto"} width={155} height={167}
-                                           className={"mb-9 place-item-center "}/>
-                                </div>
-                                <div className={" grid place-content-center"}>
-                                    <h2 className={"grid w-fit place-content-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
-                                        Étape 1
-                                    </h2>
-                                </div>
 
-
-                                <h2 className={"text-xl font-semibold text-center"}>
-                                    Évaluer votre
-                                    profil d'investisseur
-                                </h2>
-                                <p className={"max-w-sm text-center"}>
-                                    Commencez par évaluer votre
-                                    profil d'investisseur pour
-                                    déterminer votre tolérance au
-                                    risque et vos objectifs financiers.
-                                </p>
-                            </div>
-
-                            <div className={"grid gap-2 max-w-sm"}>
-                                <div className={"grid place-items-center"}>
-                                    <Image src={creditCard} alt={"wallet-crypto"} width={155} height={167}
-                                           className={"mb-9 place-item-center "}/>
-                                </div>
-                                <div className={"grid place-content-center"}>
-                                    <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
-                                        Étape 2
-                                    </h2>
-                                </div>
-
-
-                                <h2 className={"text-xl font-semibold text-center"}>
-                                    Étudier les options
-                                    d'investissement
-                                </h2>
-                                <p className={"max-w-sm text-center"}>
-                                    Étudiez attentivement les options
-                                    d'investissement dans l'immobilier,
-                                    la crypto et les NFT pour choisir
-                                    les investissements les plus adaptés.
-                                </p>
-                            </div>
-
-                            <div className={"grid gap-2 max-w-sm"}>
-                                <div className={"grid place-items-center"}>
-                                    <Image src={balance} alt={"wallet-crypto"} width={155} height={167}
-                                           className={"mb-9 place-item-center "}/>
-                                </div>
-                                <div className={"grid place-content-center"}>
-                                    <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
-                                        Étape 3
-                                    </h2>
-                                </div>
-
-
-                                <h2 className={"text-xl font-semibold text-center"}>
-                                    Planifier et gérer
-                                    votre portefeuille
-                                </h2>
-                                <p className={"max-w-sm text-center"}>
-                                    Planifiez et gérez votre portefeuille
-                                    d'investissement en utilisant les
-                                    outils et les ressources disponibles
-                                    pour maximiser votre rendement.
-                                </p>
-                            </div>
-                            <div className={"grid gap-2 max-w-sm"}>
-                                <div className={"grid place-items-center"}>
-                                    <Image src={dollar} alt={"wallet-crypto"} width={155} height={167}
-                                           className={"mb-9 place-item-center "}/>
-                                </div>
-                                <div className={"grid place-content-center"}>
-                                    <h2 className={"grid justify-items-center font-semibold text-lg py-3 px-6 bg-grey rounded-full"}>
-                                        Étape 4
-                                    </h2>
-                                </div>
-
-
-                                <h2 className={"text-xl font-semibold text-center"}>
-                                    Surveiller et ajuster
-                                    vos investissements
-                                </h2>
-                                <p className={"max-w-sm text-center"}>
-                                    Surveillez régulièrement vos
-                                    investissements et ajustez votre
-                                    portefeuille en fonction
-                                    des changements de marché.
-                                </p>
-                            </div>
-
-                        </div>
-                        <div
-                            className={"absolute -inset-y-26 -left-52  z-0 w-1/3 h-1/3 bg-orange/30 rounded-full filter blur-3xl "}></div>
-
-                    </div>
-                </section>
+                 
                 <section>
                     <div
                         className={"absolute inset-y-56 -right-48  z-0 w-1/2 h-1/3 bg-orange/25 rounded-full filter blur-3xl "}></div>
@@ -225,7 +88,7 @@ const App: React.FC = () => {
                             ressources et l'éducation
                             nécessaires pour faire des investissements judicieux dans l'immobilier, la crypto et les NFT
                             : notre
-                            engagement chez Investytsiyi.
+                            engagement chez Investissy.
                         </p>
                     </div>
                     <div className={"grid grid-cols-2 grid-flow-dense relative z-10"}>
@@ -255,7 +118,7 @@ const App: React.FC = () => {
                                 <div
                                     className={"h-20 bg-primary min-w-2 w-2 rounded-full shadow-primary shadow-2xl "}></div>
                                 <p className={" ml-2 p-4 -mr-6 text-justify inline-block"}>
-                                    Chez Investytsiyi, notre engagement est de vous aider à atteindre vos
+                                    Chez Investissy, notre engagement est de vous aider à atteindre vos
                                     objectifs financiers à long terme grâce à des ressources pédagogiques
                                     de qualité supérieure.
                                 </p>
@@ -271,7 +134,7 @@ const App: React.FC = () => {
                         className={"grid relative z-10 justify-items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"}>
                         <div className="  lg:mb-12">
                             <h2 className="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">Commencez
-                                l’aventure avec Investytsiyi </h2>
+                                l’aventure avec Investissy </h2>
                         </div>
                         <p className={'text-center text-lg max-w-5xl'}>
                             Nous sommes fiers de proposer des frais compétitifs, afin que vous puissiez maximiser vos
@@ -493,7 +356,7 @@ const App: React.FC = () => {
                                 </div>
                                 <h3 className={"text-lg text-primary font-semibold"}>THOMAS DUPONT</h3>
                                 <p className={"text-justify"}>Je suis très satisfait des résultats que j'ai obtenus avec
-                                    Investytsiyi.
+                                    Investissy.
                                     J'ai utilisé la plateforme pour investir dans l'immobilier et
                                     j'ai pu obtenir un flux de revenus passif très intéressant.
                                 </p>
@@ -507,7 +370,7 @@ const App: React.FC = () => {
                                            width={200} height={200}/>
                                 </div>
                                 <h3 className={"text-lg text-primary  font-semibold"}>SARAH MARTIN</h3>
-                                <p className={"text-justify"}>Grâce à Investytsiyi, j'ai réussi à investir dans des NFT
+                                <p className={"text-justify"}>Grâce à Investissy, j'ai réussi à investir dans des NFT
                                     et j'ai obtenu des rendements incroyables en peu de temps. Je recommande vivement
                                     cette plateforme.
                                 </p>
@@ -522,7 +385,7 @@ const App: React.FC = () => {
                                 <h3 className={"text-lg text-primary font-semibold"}>PIERRE DURANT</h3>
                                 <p className={"text-justify"}>Je cherchais une plateforme qui me permettrait d'investir
                                     dans l'immobilier de manière simple et efficace,
-                                    et j'ai trouvé Investytsiyi.
+                                    et j'ai trouvé Investissy.
                                     J'ai été impressionné par la qualité des informations proposés.
                                 </p>
                             </div>
@@ -535,7 +398,7 @@ const App: React.FC = () => {
                                            width={200} height={100}/>
                                 </div>
                                 <h3 className={"text-lg text-primary font-semibold"}>MARIE LEBLANC</h3>
-                                <p className={"text-justify"}>Investytsiyi m'a permis de me lancer dans l'investissement
+                                <p className={"text-justify"}>Investissy m'a permis de me lancer dans l'investissement
                                     dans la crypto-monnaie, même si je n'avais pas d'expérience dans ce domaine.
                                     J'ai réussi à obtenir des rendements impressionnants.
                                 </p>
@@ -589,7 +452,7 @@ const App: React.FC = () => {
                         <div
                             className={"flex bg-white p-4 px-12 justify-between rounded-xl shadow-xl shadow-circle/30"}>
                             <p className={"self-center text-lg font-semibold"}>Comment puis-je contacter le service
-                                client d'Investytsiyi en cas de problème ?</p>
+                                client d'Investissy en cas de problème ?</p>
                             <div className={" self-center bg-orange p-1 rounded-lg h-22 w-22"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={"fill-white h-22 w-22"} height="24"
                                      width="24">

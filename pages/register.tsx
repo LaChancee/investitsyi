@@ -79,7 +79,7 @@ const Register = () => {
                     </div>
                     <div className={"grid col-span-2 content-start p-8 gap-4 px-40"}>
                         <div className={"flex justify-center pb-30"}>
-                            <h1 className={"text-5xl justify-center"}>Créez votre compte <span className={"font-semibold"}> Investytsiyi </span></h1>
+                            <h1 className={"text-5xl justify-center"}>Créez votre compte <span className={"font-semibold"}> Investissy </span></h1>
                         </div>
                         <div>
                             <div>

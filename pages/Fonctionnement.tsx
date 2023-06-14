@@ -28,7 +28,7 @@ export default function Fonctionnement() {
                         <h1 className="max-w-2xl mb-4 text-4xl font-bold
                     tracking-tight leading-loose md:text-5xl
                     xl:text-7xl dark:text-white">
-                            Investir avec Investytsiyi : une expérience fluide
+                            Investir avec Investissy : une expérience fluide
                             et intuitive
                         </h1>
                         <p className="max-w-2xl mb-6  text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Apprenez comment notre plateforme vous aide à investir dans les
@@ -48,7 +48,7 @@ export default function Fonctionnement() {
                 <div className="grid relative z-10 max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="mr-auto place-self-center lg:col-span-7 ">
                         <h1 className="max-w-2xl mb-6 text-4xl font-bold tracking-tight leading-loose md:text-4xl xl:text-5xl dark:text-white">
-                            Comment Investytsiyi
+                            Comment Investissy
                             fonctionne-t-il ?
                         </h1>
                         <ul className={"grid grid-rows-3 gap-5"}>
@@ -103,7 +103,7 @@ export default function Fonctionnement() {
                         <div className={"grid place-self-center place-content-center p-12 bg-white/50 w-fit h-fit shadow shadow-circle/30 shadow-4xl rounded-full "}>
                             <span className={"text-center max-w-sm p-12"}>
                                 “C'est incroyable de trouver une communauté d'investisseurs aussi engagée et
-                                passionnée que celle d'Investytsiyi.
+                                passionnée que celle d'Investissy.
                                 Grâce à leurs conseils et leur soutien,
                                 j'ai pu prendre des décisions d'investissement plus éclairées et augmenter mes bénéfices.”
                             </span>
@@ -117,7 +117,7 @@ export default function Fonctionnement() {
                                 d'investisseurs passionnés</h3>
                             <div className={" grid gap-5"}>
                                 <p className={"text-lg"}>
-                                    Chez Investytsiyi, nous croyons que le partage de connaissances et d'expériences est essentiel pour réussir dans l'investissement. C'est
+                                    Chez Investissy, nous croyons que le partage de connaissances et d'expériences est essentiel pour réussir dans l'investissement. C'est
                                     pourquoi nous avons créé une communauté active où les investisseurs
                                     peuvent se connecter, partager des connaissances, des stratégies,
                                     et des astuces pour réussir.</p>
